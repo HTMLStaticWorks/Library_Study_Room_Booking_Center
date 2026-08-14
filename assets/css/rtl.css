@@ -1,0 +1,46 @@
+/* ==========================================================
+   StudyNest — Right-To-Left (RTL) Layout Stylesheet
+   ========================================================== */
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .nav__logo {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav__actions {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .card__img-tag {
+  left: auto;
+  right: 0.75rem;
+}
+
+html[dir="rtl"] .card__img-price {
+  right: auto;
+  left: 0.75rem;
+}
+
+html[dir="rtl"] .hero__floater-top {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .hero__floater-bottom {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .toast-container {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .scroll-top {
+  right: auto;
+  left: 1.5rem;
+}

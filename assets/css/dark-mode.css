@@ -1,0 +1,201 @@
+/* ==========================================================
+   StudyNest — Dark Mode Theme Stylesheet
+   ========================================================== */
+
+body.dark-mode {
+  --bg: var(--n950);
+  --bg-card: var(--n900);
+  --bg-card-alt: var(--n950);
+  --bg-inset: var(--n900);
+  --text: var(--n100);
+  --text-sec: var(--n300);
+  --text-dim: var(--n400);
+  --text-muted: var(--n500);
+  --border: var(--n800);
+  --border-light: rgba(38,38,38,.8);
+}
+
+.dark-mode .nav {
+  background: rgba(10,10,10,.92);
+}
+.dark-mode .nav__logo svg {
+  color: var(--primary-400);
+}
+.dark-mode .hero {
+  background: linear-gradient(to bottom, var(--n900), var(--n900), var(--n950));
+}
+.dark-mode .section-eyebrow {
+  color: var(--primary-400);
+}
+.dark-mode .badge--primary {
+  background: rgba(4,47,46,.6);
+  color: var(--primary-300);
+  border-color: var(--primary-800);
+}
+.dark-mode .badge--tier {
+  background: var(--primary-950);
+  color: var(--primary-300);
+}
+.dark-mode .badge--status-confirmed {
+  background: var(--success-950);
+  color: var(--success-400);
+}
+.dark-mode .card:hover .card__title {
+  color: var(--primary-400);
+}
+.dark-mode .quick-search {
+  background: var(--n900);
+  border-color: var(--n800);
+}
+.dark-mode .quick-search .form-label {
+  color: var(--n400);
+}
+.dark-mode .quick-search__btn {
+  background: var(--primary-600);
+  color: #fff;
+}
+.dark-mode .quick-search__btn:hover {
+  background: var(--primary-700);
+}
+.dark-mode .featured {
+  background: var(--n950);
+}
+.dark-mode .filter-tab:hover {
+  background: var(--n700);
+}
+.dark-mode .how-it-works {
+  background: var(--n900);
+  border-color: var(--n800);
+}
+.dark-mode .step-card {
+  background: var(--n950);
+}
+.dark-mode .step-num {
+  background: rgba(4,47,46,.6);
+  border-color: var(--primary-800);
+  color: var(--primary-400);
+}
+.dark-mode .amenities {
+  background: var(--n950);
+}
+.dark-mode .amenity-item {
+  background: var(--n900);
+}
+.dark-mode .amenity-item__head {
+  color: var(--primary-400);
+}
+.dark-mode .hero__card {
+  border-color: var(--n700);
+}
+.dark-mode .hero__floater-top {
+  background: rgba(23,23,23,.95);
+  border-color: var(--n700);
+}
+.dark-mode .hero__floater-bottom {
+  background: rgba(10,10,10,.9);
+}
+.dark-mode .space-cats {
+  background: var(--n950);
+}
+.dark-mode .cat-card {
+  background: var(--n900);
+}
+.dark-mode .cat-card__icon {
+  background: rgba(4,47,46,.6);
+  border-color: var(--primary-800);
+  color: var(--primary-400);
+}
+.dark-mode .library-rules {
+  background: var(--n900);
+  border-color: var(--n800);
+}
+.dark-mode .rule-item {
+  background: var(--n950);
+}
+.dark-mode .rules__image {
+  border-color: var(--n700);
+}
+.dark-mode .membership {
+  background: var(--n950);
+}
+.dark-mode .pricing-card {
+  background: var(--n900);
+}
+.dark-mode .pricing-card--featured {
+  background: rgba(4,47,46,.15);
+}
+.dark-mode .dash-overview {
+  background: var(--n900);
+}
+.dark-mode .dash-metric {
+  background: var(--n950);
+}
+.dark-mode .dash-metric__value--primary {
+  color: var(--primary-400);
+}
+.dark-mode .dash-metric__sub-note {
+  color: var(--success-400);
+}
+.dark-mode .dash-empty {
+  background: var(--n900);
+  border-color: var(--n700);
+}
+.dark-mode .dash-empty__icon {
+  background: var(--primary-950);
+}
+.dark-mode .pass-card {
+  background: var(--n900);
+}
+.dark-mode .pass-card__seat {
+  color: var(--primary-400);
+}
+.dark-mode .dash-quickbook {
+  background: var(--n900);
+}
+.dark-mode .dash-quickbook__form {
+  background: var(--n950);
+}
+.dark-mode .table-wrap {
+  background: var(--n900);
+}
+.dark-mode .data-table thead tr {
+  background: var(--n950);
+}
+.dark-mode .plan-card {
+  background: var(--n900);
+}
+.dark-mode .plan-card__eyebrow {
+  color: var(--primary-400);
+}
+.dark-mode .not-found {
+  background: var(--n950);
+}
+.dark-mode .not-found__icon {
+  background: rgba(4,47,46,.6);
+  color: var(--primary-400);
+}
+.dark-mode .not-found__code {
+  color: var(--primary-500);
+}
+.dark-mode .toast--success {
+  background: var(--success-950);
+  color: var(--success-400);
+  border-color: var(--success-800);
+}
+.dark-mode .toast--error {
+  background: #450a0a;
+  color: #fca5a5;
+  border-color: #7f1d1d;
+}
+.dark-mode .toast--info {
+  background: #172554;
+  color: #93c5fd;
+  border-color: #1e3a5f;
+}
+.dark-mode .btn--ghost {
+  background: var(--n800);
+  color: var(--n200);
+}
+.dark-mode .btn--ghost:hover {
+  background: var(--n700);
+}

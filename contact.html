@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | StudyNest</title>
+  <meta name="description" content="Contact the StudyNest team for inquiries, campus tours, or membership assistance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ══════ HEADER ══════ -->
+  <header class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        </svg>
+        <span>StudyNest</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="services.html" data-nav="services">Rooms</a>
+        <a href="membership.html" data-nav="membership">Membership</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact" class="active">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+        <a href="dashboard.html" class="nav__cta"><i data-lucide="calendar" style="width:16px;height:16px;display:inline-block;vertical-align:-2px;margin-right:4px"></i>Book Now</a>
+      </div>
+    </div>
+    <div class="nav__mobile">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="services.html" data-nav="services">Rooms</a>
+      <a href="membership.html" data-nav="membership">Membership</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact" class="active">Contact</a>
+      <a href="faq.html" data-nav="faq">FAQs</a>
+      <a href="dashboard.html" class="nav__mobile-cta">Book a Study Slot</a>
+    </div>
+  </header>
+
+  <!-- ══════ MAIN ══════ -->
+  <main id="main" style="padding-top: 5rem; padding-bottom: 4rem;">
+    <div class="container" style="max-width: 960px;">
+      <div class="section-head">
+        <p class="section-eyebrow">Help Desk &amp; Inquiries</p>
+        <h2 class="section-title">Get in Touch with StudyNest</h2>
+        <p class="section-desc">Have questions about memberships, room bookings, or corporate packages?</p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem;">
+        <div class="card" style="padding:1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
+            <i data-lucide="map-pin"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Location</h4>
+          </div>
+          <p style="font-size:0.875rem; color:var(--text-sec);">12 Knowledge Avenue, Academic District<br>University Center</p>
+        </div>
+        <div class="card" style="padding:1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
+            <i data-lucide="phone"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Phone</h4>
+          </div>
+          <p style="font-size:0.875rem; color:var(--text-sec);">+1 (800) 555-NEST<br>Mon–Sun: 6:00 AM – 12:00 AM</p>
+        </div>
+        <div class="card" style="padding:1.5rem;">
+          <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
+            <i data-lucide="mail"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Email</h4>
+          </div>
+          <p style="font-size:0.875rem; color:var(--text-sec);">support@studynest.edu<br>admissions@studynest.edu</p>
+        </div>
+      </div>
+
+      <div class="card" style="padding:2rem;">
+        <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1rem;">Send Us a Message</h3>
+        <form onsubmit="event.preventDefault(); alert('Message submitted successfully!');">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
+            <div>
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-input" placeholder="Alexander Wright" required>
+            </div>
+            <div>
+              <label class="form-label">Your Email</label>
+              <input type="email" class="form-input" placeholder="alex@example.com" required>
+            </div>
+          </div>
+          <div style="margin-bottom:1.5rem;">
+            <label class="form-label">Message</label>
+            <textarea class="form-input" style="height:120px; padding:0.75rem; resize:vertical;" placeholder="How can we assist your study needs?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary"><i data-lucide="send"></i><span>Send Message</span></button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+          </svg>
+          <span>StudyNest</span>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a><a href="services.html">Rooms</a><a href="membership.html">Membership</a><a href="about.html">About</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a><a href="patron-login.html">Member Login</a><a href="dashboard.html">Dashboard</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>

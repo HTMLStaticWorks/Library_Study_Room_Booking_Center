@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Room Details | StudyNest</title>
+  <meta name="description" content="View complete acoustic, technical, and amenity specifications for individual study rooms at StudyNest.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body data-page="service-details">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ══════ HEADER ══════ -->
+  <header class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        </svg>
+        <span>StudyNest</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="services.html" data-nav="services" class="active">Rooms</a>
+        <a href="membership.html" data-nav="membership">Membership</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+        <a href="dashboard.html" class="nav__cta"><i data-lucide="calendar" style="width:16px;height:16px;display:inline-block;vertical-align:-2px;margin-right:4px"></i>Book Now</a>
+      </div>
+    </div>
+    <div class="nav__mobile">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="services.html" data-nav="services" class="active">Rooms</a>
+      <a href="membership.html" data-nav="membership">Membership</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="faq.html" data-nav="faq">FAQs</a>
+      <a href="dashboard.html" class="nav__mobile-cta">Book a Study Slot</a>
+    </div>
+  </header>
+
+  <!-- ══════ MAIN ══════ -->
+  <main id="main" style="padding-top: 5rem; padding-bottom: 4rem;">
+    <div class="container">
+      <div style="margin-bottom:1.5rem;">
+        <a href="services.html" class="btn btn--sm btn--ghost"><i data-lucide="arrow-left"></i><span>Back to All Rooms</span></a>
+      </div>
+
+      <div id="room-detail-content" class="grid" style="display:grid; grid-template-columns:1fr; gap:2rem;">
+        <!-- Filled by JS or fallback -->
+        <div class="card" style="padding:2rem;">
+          <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span class="badge badge--primary">Acoustic Pod Alpha</span>
+              <h1 class="section-title" style="margin-top:0.5rem;" id="detail-room-name">Silent Solo Pod Alpha</h1>
+              <p class="section-desc" id="detail-room-desc">Zero-noise acoustic pod engineered for unbroken concentration and deep work sessions.</p>
+            </div>
+            <div style="font-size:1.75rem; font-weight:700; color:var(--primary-600);" id="detail-room-price">$8 / hr</div>
+          </div>
+
+          <div style="margin-top:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
+            <div class="amenity-item">
+              <div class="amenity-item__head"><i data-lucide="volume-x"></i><span>Noise Level</span></div>
+              <p id="detail-noise">0 dB — Total Silence</p>
+            </div>
+            <div class="amenity-item">
+              <div class="amenity-item__head"><i data-lucide="users"></i><span>Capacity</span></div>
+              <p id="detail-capacity">1 Person</p>
+            </div>
+            <div class="amenity-item">
+              <div class="amenity-item__head"><i data-lucide="zap"></i><span>Power Outlets</span></div>
+              <p id="detail-power">2 AC &amp; USB Outlets</p>
+            </div>
+            <div class="amenity-item">
+              <div class="amenity-item__head"><i data-lucide="wifi"></i><span>Internet</span></div>
+              <p>1 Gbps High-Speed Wi-Fi 6</p>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;">
+            <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1rem;">Features &amp; Equipment Included</h3>
+            <ul class="card__features" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.75rem;">
+              <li><i data-lucide="check-circle-2"></i><span>Full soundproof acoustic glass walls</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Adjustable LED desk lighting (2700K - 5000K)</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Ergonomic Herman Miller posture chair</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Motorized fresh air circulation system</span></li>
+              <li><i data-lucide="check-circle-2"></i><span>Wireless phone charging pad built into desk</span></li>
+            </ul>
+          </div>
+
+          <div style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
+            <a href="dashboard.html" class="btn btn--primary"><i data-lucide="calendar"></i><span>Reserve This Space</span></a>
+            <a href="services.html" class="btn btn--secondary">View Other Rooms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+          </svg>
+          <span>StudyNest</span>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a><a href="services.html">Rooms</a><a href="membership.html">Membership</a><a href="about.html">About</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a><a href="patron-login.html">Member Login</a><a href="dashboard.html">Dashboard</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>

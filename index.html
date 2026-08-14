@@ -1,1 +1,355 @@
-index.html
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyNest — Library &amp; Study Room Booking Center</title>
+  <meta name="description"
+    content="A private library and study center offering quiet reading spaces and bookable study rooms, with member login to check availability, reserve slots, and manage membership plans.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ══════ HEADER ══════ -->
+  <header class="nav" id="main-nav">
+    <div class="nav__inner">
+      <a class="nav__logo" href="index.html" aria-label="Home">
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+          <path d="M16 10v16" />
+          <path d="M10 4q6-3 12 0" />
+        </svg>
+        <span>StudyNest</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" data-nav="home" class="active">Home</a>
+        <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="services.html" data-nav="services">Rooms</a>
+        <a href="membership.html" data-nav="membership">Membership</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
+        <a href="dashboard.html" class="nav__cta"><i data-lucide="calendar"
+            style="width:16px;height:16px;display:inline-block;vertical-align:-2px;margin-right:4px"></i>Book Now</a>
+      </div>
+    </div>
+
+    <div class="nav__mobile">
+      <a href="index.html" data-nav="home" class="active">Home</a>
+      <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="services.html" data-nav="services">Rooms</a>
+      <a href="membership.html" data-nav="membership">Membership</a>
+      <a href="about.html" data-nav="about">About</a>
+      <a href="contact.html" data-nav="contact">Contact</a>
+      <a href="faq.html" data-nav="faq">FAQs</a>
+      <a href="dashboard.html" class="nav__mobile-cta">Book a Study Slot</a>
+    </div>
+  </header>
+
+  <!-- ══════ MAIN ══════ -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="hero-section">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__content">
+            <div class="badge badge--primary">
+              <i data-lucide="sparkles" style="width:14px;height:14px" class="animate-spin"></i>
+              <span>Private Academic Library &amp; Acoustic Rooms</span>
+            </div>
+            <h1 class="hero__title">Where Silence Fuels Breakthroughs.</h1>
+            <p class="hero__sub">A high-end private study center designed for university researchers, exam aspirants,
+              and deep-focus professionals. Reserve soundproof solo pods, collaborative research suites, and high-speed
+              workstations with guaranteed availability.</p>
+            <div class="hero__btns">
+              <a href="dashboard.html" class="btn btn--primary">
+                <i data-lucide="calendar" style="width:18px;height:18px"></i>
+                <span>Reserve a Study Slot</span>
+              </a>
+              <a href="services.html" class="btn btn--secondary">
+                <span>Explore All Spaces</span>
+                <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+              </a>
+            </div>
+            <div class="hero__trust">
+              <div class="hero__trust-item"><i data-lucide="shield-check"
+                  style="width:16px;height:16px;color:var(--success-600)"></i><span>&lt;20dB Noise Damping</span></div>
+              <div class="hero__trust-item"><i data-lucide="zap"
+                  style="width:16px;height:16px;color:var(--accent-500)"></i><span>Instant PIN Access</span></div>
+              <div class="hero__trust-item"><i data-lucide="coffee"
+                  style="width:16px;height:16px;color:var(--primary-600)"></i><span>Complimentary Espresso Bar</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="hero__glow"></div>
+            <div class="hero__card">
+              <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=900&q=80"
+                alt="Acoustic Study Pod Interior" loading="lazy">
+              <div class="hero__floater-top">
+                <div class="hero__pulse"><span></span><span></span></div>
+                <div>
+                  <p class="f-label">Live Status</p>
+                  <p class="f-value">14 Pods Available Now</p>
+                </div>
+              </div>
+              <div class="hero__floater-bottom">
+                <div>
+                  <div class="hero__stars">
+                    <i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i>
+                    <i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i>
+                    <i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i>
+                    <i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i>
+                    <i data-lucide="star" style="width:14px;height:14px;fill:currentColor"></i>
+                  </div>
+                  <p class="hero__review-text">"The quietest study pods in the city. Boosted my bar exam prep."</p>
+                </div>
+                <span class="hero__review-score">4.9/5 Rating</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Search Ribbon -->
+    <section class="quick-search" id="quick-search-section">
+      <div class="container">
+        <form id="quick-search-form" class="quick-search__form">
+          <div>
+            <label class="form-label">Target Study Date</label>
+            <input type="date" id="search-date" class="form-input form-input--dark">
+          </div>
+          <div>
+            <label class="form-label">Space Type</label>
+            <select class="form-select form-select--dark">
+              <option value="all">All Study Spaces</option>
+              <option value="silent-pod">Silent Solo Pod (0dB)</option>
+              <option value="private-study">Executive Scholar Studio</option>
+              <option value="group-discussion">Group Research Hub</option>
+              <option value="media-lab">Digital Media Lab</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Session Duration</label>
+            <select class="form-select form-select--dark">
+              <option value="2">2 Hours (Quick Session)</option>
+              <option value="4">4 Hours (Half Day Deep Work)</option>
+              <option value="8">8 Hours (Full Day Pass)</option>
+            </select>
+          </div>
+          <div>
+            <button type="submit" class="quick-search__btn">
+              <i data-lucide="search" style="width:16px;height:16px"></i>
+              <span>Check Live Availability</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Featured Study Rooms -->
+    <section class="featured" id="featured-section">
+      <div class="container" style="text-align:center">
+        <div class="section-head">
+          <p class="section-eyebrow">Engineered Environments</p>
+          <h2 class="section-title">Featured Study Spaces &amp; Silent Pods</h2>
+          <p class="section-desc">Each room is calibrated for exact decibel levels, ergonomic posture support, and
+            maximum productivity.</p>
+          <div class="filter-tabs">
+            <button class="filter-tab active" data-filter="all">All Spaces</button>
+            <button class="filter-tab" data-filter="silent-pod">Solo Silent Pods</button>
+            <button class="filter-tab" data-filter="private-study">Executive Studios</button>
+            <button class="filter-tab" data-filter="group-discussion">Group Suites</button>
+          </div>
+        </div>
+        <div class="rooms-grid" id="rooms-grid"></div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works-section">
+      <div class="container" style="text-align:center">
+        <div class="section-head">
+          <p class="section-eyebrow">Seamless Reservation</p>
+          <h2 class="section-title">Book Your Slot in 3 Simple Steps</h2>
+          <p class="section-desc">No delays or front-desk queues. Check instant room availability and enter via
+            electronic PIN code.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Choose Space &amp; Noise Level</h3>
+            <p>Select between 0dB solo acoustic pods, 4K executive scholar suites, or collaborative whiteboard hubs.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Select Date &amp; Time Slot</h3>
+            <p>Pick your preferred time block from 2 hours to full-day passes with real-time floor plan visibility.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Receive Passcode &amp; Enter</h3>
+            <p>Instantly receive your digital door PIN and study pass on your member dashboard for seamless keyless
+              entry.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="amenities" id="amenities-section">
+      <div class="container">
+        <div class="amenities__grid">
+          <div class="amenities__text">
+            <p class="section-eyebrow">Academic Standards</p>
+            <h2 class="section-title">Designed for Extended, Pain-Free Study Sessions</h2>
+            <p class="section-desc">We eliminated all standard library frustrations: no noisy chatter, no flickering
+              lights, and no hunt for electrical outlets.</p>
+            <div class="amenities__features">
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="volume-x"></i><span>Acoustic Calibrated</span></div>
+                <p>Multi-layer rockwool damping &amp; soundproof seals.</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="wifi"></i><span>Gigabit Fiber Wi-Fi 6</span></div>
+                <p>Ultra-low latency for research &amp; live simulations.</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="award"></i><span>Ergonomic Furniture</span></div>
+                <p>Premium ergonomic chairs in all study suites.</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="coffee"></i><span>Barista Coffee Station</span></div>
+                <p>Unlimited pour-over, cold brew &amp; loose-leaf tea.</p>
+              </div>
+            </div>
+          </div>
+          <div class="amenities__images">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80"
+              alt="Study Space Ergonomics" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=600&q=80"
+              alt="Library Reading Hall" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats & Testimonials -->
+    <section class="stats-section" id="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <p class="stat-value">18,500+</p>
+            <p class="stat-label">Deep Study Hours Logged</p>
+          </div>
+          <div>
+            <p class="stat-value">99.4%</p>
+            <p class="stat-label">Silence Rating Compliance</p>
+          </div>
+          <div>
+            <p class="stat-value">42</p>
+            <p class="stat-label">Dedicated Acoustic Pods</p>
+          </div>
+          <div>
+            <p class="stat-value">1,240+</p>
+            <p class="stat-label">Exam Passes &amp; Theses</p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__stars">
+            <i data-lucide="star" style="width:18px;height:18px;fill:currentColor"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:currentColor"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:currentColor"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:currentColor"></i>
+            <i data-lucide="star" style="width:18px;height:18px;fill:currentColor"></i>
+          </div>
+          <blockquote>"Booking an acoustic pod at StudyNest was the single most impactful change in my medical
+            residency prep. In three weeks, my practice retention improved by 35%."</blockquote>
+          <div class="testimonial__author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80"
+              alt="Dr. Elena Rostova">
+            <div>
+              <p class="testimonial__author-name">Dr. Elena Rostova</p>
+              <p class="testimonial__author-role">Cardiology Fellow &amp; Researcher</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="cta-section">
+      <div class="container" style="text-align:center">
+        <div class="section-head">
+          <p class="section-eyebrow">Immediate Access</p>
+          <h2 class="section-title" style="color:#fff">Reserve Your Study Pod and Start Focusing Today</h2>
+          <p class="section-desc" style="color:var(--primary-100)">Choose your preferred room, pick your hours, and
+            unlock keyless entry with your digital booking code.</p>
+        </div>
+        <div class="cta-btns">
+          <a href="dashboard.html" class="btn btn--dark">
+            <i data-lucide="calendar" style="width:18px;height:18px;color:var(--primary-400)"></i>
+            <span>Book a Study Session</span>
+          </a>
+          <a href="membership.html" class="btn btn--outline-white"><span>View Membership Plans</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════ FOOTER ══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+            <path d="M16 10v16" />
+            <path d="M10 4q6-3 12 0" />
+          </svg>
+          <span>StudyNest</span>
+        </div>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="services.html">Rooms</a>
+          <a href="membership.html">Membership</a>
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQs</a>
+          <a href="contact.html">Contact</a>
+          <a href="patron-login.html">Member Login</a>
+          <a href="dashboard.html">Dashboard</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+  <div id="toast-container" class="toast-container"></div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
+</html>
