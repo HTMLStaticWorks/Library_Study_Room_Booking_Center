@@ -7,10 +7,10 @@ body.dark-mode {
   --bg-card: var(--n900);
   --bg-card-alt: var(--n950);
   --bg-inset: var(--n900);
-  --text: var(--n100);
-  --text-sec: var(--n300);
-  --text-dim: var(--n400);
-  --text-muted: var(--n500);
+  --text: #ffffff;
+  --text-sec: #e2e8f0;
+  --text-dim: #cbd5e1;
+  --text-muted: #94a3b8;
   --border: var(--n800);
   --border-light: rgba(38,38,38,.8);
 }

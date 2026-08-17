@@ -55,59 +55,182 @@
   </header>
 
   <!-- ══════ MAIN ══════ -->
-  <main id="main" style="padding-top: 3.5rem; padding-bottom: 4rem;">
-    <div class="container">
-      <div style="margin-bottom:1.5rem;">
-        <a href="services.html" class="btn btn--sm btn--ghost"><i data-lucide="arrow-left"></i><span>Back to All Rooms</span></a>
-      </div>
+  <main id="main" style="padding-top: 6.5rem; padding-bottom: 4.5rem;">
 
-      <div id="room-detail-content" class="grid" style="display:grid; grid-template-columns:1fr; gap:2rem;">
-        <!-- Filled by JS or fallback -->
-        <div class="card" style="padding:2rem;">
-          <div style="display:flex; justify-content:space-between; align-items:start; flex-wrap:wrap; gap:1rem;">
-            <div>
-              <span class="badge badge--primary">Acoustic Pod Alpha</span>
-              <h1 class="section-title" style="margin-top:0.5rem;" id="detail-room-name">Silent Solo Pod Alpha</h1>
-              <p class="section-desc" id="detail-room-desc">Zero-noise acoustic pod engineered for unbroken concentration and deep work sessions.</p>
+    <div class="container" style="max-width: 1140px;">
+      <div id="room-detail-content" style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2rem; align-items: start;">
+        
+        <!-- LEFT COLUMN: Main Specifications & Technical Environment -->
+        <div style="display: flex; flex-direction: column; gap: 2rem;">
+          
+          <!-- Card 1: Main Room Overview & Image -->
+          <div class="card" style="padding: 2.25rem;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+              <div>
+                <span class="badge badge--primary" id="detail-category-badge" style="margin-bottom: 0.5rem;">Acoustic Suite</span>
+                <h1 class="section-title" style="margin: 0.25rem 0;" id="detail-room-name">Silent Solo Pod Alpha</h1>
+                <p class="section-desc" id="detail-room-desc">Zero-noise acoustic pod engineered for unbroken concentration and deep work sessions.</p>
+              </div>
+              <div style="font-size: 2rem; font-weight: 800; color: var(--primary-600); letter-spacing: -0.02em;" id="detail-room-price">$19 / hr</div>
             </div>
-            <div style="font-size:1.75rem; font-weight:700; color:var(--primary-600);" id="detail-room-price">$8 / hr</div>
+
+            <!-- Room Main Image Banner -->
+            <div style="width: 100%; height: 340px; border-radius: var(--radius-xl); overflow: hidden; margin: 1.5rem 0; border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+              <img id="detail-room-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Room preview image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            </div>
+
+            <!-- Core Specs Grid -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="volume-x"></i><span>Noise Level</span></div>
+                <p id="detail-noise" style="font-weight: 600; color: var(--text);">0 dB — Total Silence</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="users"></i><span>Capacity</span></div>
+                <p id="detail-capacity" style="font-weight: 600; color: var(--text);">1 Person</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="zap"></i><span>Power Outlets</span></div>
+                <p id="detail-power" style="font-weight: 600; color: var(--text);">4 AC &amp; USB Ports</p>
+              </div>
+              <div class="amenity-item">
+                <div class="amenity-item__head"><i data-lucide="wifi"></i><span>Wi-Fi Network</span></div>
+                <p style="font-weight: 600; color: var(--text);">1 Gbps Wi-Fi 6E</p>
+              </div>
+            </div>
+
+            <!-- Features List -->
+            <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+              <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Included Executive Equipment &amp; Amenities</h3>
+              <ul class="card__features" id="detail-features-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.875rem;">
+                <li><i data-lucide="check-circle-2"></i><span>Full soundproof double-glazed glass walls</span></li>
+                <li><i data-lucide="check-circle-2"></i><span>Adjustable LED desk lighting (2700K - 5000K)</span></li>
+                <li><i data-lucide="check-circle-2"></i><span>Ergonomic Herman Miller Aeron posture chair</span></li>
+                <li><i data-lucide="check-circle-2"></i><span>Motorized fresh air circulation system</span></li>
+                <li><i data-lucide="check-circle-2"></i><span>Wireless phone charging pad built into desk</span></li>
+              </ul>
+            </div>
           </div>
 
-          <div style="margin-top:2rem; display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:1rem;">
-            <div class="amenity-item">
-              <div class="amenity-item__head"><i data-lucide="volume-x"></i><span>Noise Level</span></div>
-              <p id="detail-noise">0 dB — Total Silence</p>
+          <!-- NEW SECTION: Official Acoustic & Technical Environment Specifications -->
+          <div class="card" id="tech-specs-card" style="padding: 2.25rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+              <i data-lucide="sliders" style="width: 22px; height: 22px;"></i>
+              <span style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Technical Specifications</span>
             </div>
-            <div class="amenity-item">
-              <div class="amenity-item__head"><i data-lucide="users"></i><span>Capacity</span></div>
-              <p id="detail-capacity">1 Person</p>
-            </div>
-            <div class="amenity-item">
-              <div class="amenity-item__head"><i data-lucide="zap"></i><span>Power Outlets</span></div>
-              <p id="detail-power">2 AC &amp; USB Outlets</p>
-            </div>
-            <div class="amenity-item">
-              <div class="amenity-item__head"><i data-lucide="wifi"></i><span>Internet</span></div>
-              <p>1 Gbps High-Speed Wi-Fi 6</p>
+            <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Acoustic &amp; Hardware Calibration Data</h3>
+            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6; margin-bottom: 1.75rem;">Every study unit is independently audited and certified for decibel containment, electromagnetic compliance, and ergonomic standards.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+                  <i data-lucide="shield-check"></i>
+                  <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">STC 52 Acoustic Rating</h4>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Multi-layer sound damping perimeter seals prevent sound leakage up to 52 dB across all human voice spectrums.</p>
+              </div>
+
+              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+                  <i data-lucide="wind"></i>
+                  <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">HEPA H14 Air Filtration</h4>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Medical-grade HEPA filters execute 12 complete air exchanges per hour to maintain optimal oxygen levels.</p>
+              </div>
+
+              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+                  <i data-lucide="key"></i>
+                  <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">IoT Passcode Verification</h4>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Electronic door keypads unlock automatically via unique 4-digit PIN generated upon calendar reservation.</p>
+              </div>
+
+              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+                  <i data-lucide="sun"></i>
+                  <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">Circadian Task Lighting</h4>
+                </div>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Dual-spectrum LED lamps feature adjustable color temperature controls (2700K warm to 5000K daylight).</p>
+              </div>
             </div>
           </div>
 
-          <div style="margin-top:2.5rem;">
-            <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1rem;">Features &amp; Equipment Included</h3>
-            <ul class="card__features" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:0.75rem;">
-              <li><i data-lucide="check-circle-2"></i><span>Full soundproof acoustic glass walls</span></li>
-              <li><i data-lucide="check-circle-2"></i><span>Adjustable LED desk lighting (2700K - 5000K)</span></li>
-              <li><i data-lucide="check-circle-2"></i><span>Ergonomic Herman Miller posture chair</span></li>
-              <li><i data-lucide="check-circle-2"></i><span>Motorized fresh air circulation system</span></li>
-              <li><i data-lucide="check-circle-2"></i><span>Wireless phone charging pad built into desk</span></li>
+        </div>
+
+        <!-- RIGHT COLUMN: Sticky Official Reservation Form & Policy -->
+        <div style="display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 5.5rem;">
+          
+          <!-- Booking Reservation Card -->
+          <div class="card" style="padding: 1.75rem; border: 1px solid var(--primary-400); box-shadow: var(--shadow-lg);">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+              <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text);">Reserve This Space</h3>
+              <span class="badge badge--available"><i data-lucide="check-circle" style="width:12px;height:12px"></i> Available</span>
+            </div>
+
+            <form onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.bookRoom) { window.StudyNest.bookRoom('1'); } else { alert('Reservation confirmed! PIN passcode generated.'); }">
+              <div style="margin-bottom: 1rem;">
+                <label class="form-label" style="font-size: 0.8125rem; font-weight: 600;">Select Date</label>
+                <input type="date" class="form-input" style="padding: 0.625rem; font-size: 0.875rem;" required value="2026-08-18">
+              </div>
+
+              <div style="margin-bottom: 1rem;">
+                <label class="form-label" style="font-size: 0.8125rem; font-weight: 600;">Start Time Slot</label>
+                <select class="form-input" style="padding: 0.625rem; font-size: 0.875rem;" required>
+                  <option>09:00 AM – 11:00 AM (Open)</option>
+                  <option>11:00 AM – 01:00 PM (Open)</option>
+                  <option>02:00 PM – 04:00 PM (Open)</option>
+                  <option>04:00 PM – 06:00 PM (Open)</option>
+                  <option>06:00 PM – 08:00 PM (Open)</option>
+                </select>
+              </div>
+
+              <div style="margin-bottom: 1.25rem;">
+                <label class="form-label" style="font-size: 0.8125rem; font-weight: 600;">Session Duration</label>
+                <select class="form-input" style="padding: 0.625rem; font-size: 0.875rem;" required>
+                  <option>1 Hour Session ($19)</option>
+                  <option selected>2 Hour Session ($38)</option>
+                  <option>4 Hour Half-Day Pass ($70)</option>
+                  <option>Full Day Residency ($120)</option>
+                </select>
+              </div>
+
+              <div style="padding: 1rem; background: var(--bg-card-alt); border-radius: var(--radius-lg); margin-bottom: 1.25rem; border: 1px solid var(--border-light);">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.25rem;">
+                  <span>Base Rate</span>
+                  <span>$19.00 × 2 hrs</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.5rem;">
+                  <span>Keypad PIN Service</span>
+                  <span style="color: var(--success-600); font-weight: 600;">FREE</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 1rem; font-weight: 700; color: var(--text); border-top: 1px solid var(--border); padding-top: 0.5rem;">
+                  <span>Total Payable</span>
+                  <span style="color: var(--primary-600);">$38.00</span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" style="padding: 0.875rem; font-weight: 700;">
+                <i data-lucide="calendar"></i><span>Confirm Booking &amp; Get PIN</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Official Etiquette Card -->
+          <div class="card" style="padding: 1.5rem; background: var(--bg-card-alt);">
+            <h4 style="font-size: 0.9375rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+              <i data-lucide="shield" style="color: var(--primary-600); width: 18px; height: 18px;"></i>
+              <span>Official Pod Guarantee</span>
+            </h4>
+            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8125rem; color: var(--text-sec);">
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>100% Free cancellation up to 1 hour prior.</span></li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Instant SMS door code sent to your phone.</span></li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Strict zero-decibel quiet environment.</span></li>
             </ul>
           </div>
 
-          <div style="margin-top:2.5rem; display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="dashboard.html" class="btn btn--primary"><i data-lucide="calendar"></i><span>Reserve This Space</span></a>
-            <a href="services.html" class="btn btn--secondary">View Other Rooms</a>
-          </div>
         </div>
+
       </div>
     </div>
   </main>

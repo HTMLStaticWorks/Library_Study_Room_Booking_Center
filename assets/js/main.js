@@ -193,7 +193,11 @@
     $$('.nav__links a, .nav__mobile a').forEach(function (a) {
       const navTarget = a.getAttribute('data-nav');
       if (navTarget) {
-        a.classList.toggle('active', navTarget === page);
+        if (page === 'service-details') {
+          a.classList.toggle('active', navTarget === 'services');
+        } else {
+          a.classList.toggle('active', navTarget === page);
+        }
       }
     });
   }
@@ -219,7 +223,7 @@
       '</div>' +
       '<div class="card__footer">' +
         '<a class="btn btn--sm btn--ghost" href="service-details.html?id=' + room.id + '">View Specs</a>' +
-        '<button class="btn btn--sm btn--primary" onclick="StudyNest.bookRoom(\'' + room.id + '\')"><i data-lucide="calendar"></i><span>Reserve</span></button>' +
+        '<a class="btn btn--sm btn--primary" href="service-details.html?id=' + room.id + '"><i data-lucide="calendar"></i><span>Reserve</span></a>' +
       '</div>' +
     '</div>';
   }
@@ -247,8 +251,6 @@
     if (typeof lucide !== 'undefined') lucide.createIcons({ nodes: [grid] });
   }
 
-
-
   function setFilter(filter) {
     activeFilter = filter || 'all';
     $$('.filter-tab').forEach(function (t) {
@@ -260,13 +262,13 @@
   function renderMatrixCards() {
     var grid = $('#matrix-grid');
     if (!grid) return;
-    grid.innerHTML = rooms.slice(0, 9).map(function (room) {
+    grid.innerHTML = rooms.map(function (room) {
       var isAvail = room.availability === 'Available';
       return '<div class="matrix-card">' +
-        '<div style="display:flex;flex-direction:column;gap:0.75rem">' +
+        '<div>' +
           '<div class="matrix-card__head">' +
             '<div>' +
-              '<h3 class="matrix-card__name">' + room.name + '</h3>' +
+              '<h4 class="matrix-card__name">' + room.name + '</h4>' +
               '<p class="matrix-card__noise">' + room.noiseLevel + '</p>' +
             '</div>' +
             '<span class="' + (isAvail ? 'badge--available' : 'badge--limited') + '">' + room.availability + '</span>' +
@@ -287,7 +289,7 @@
           '</div>' +
         '</div>' +
         '<div class="matrix-card__footer">' +
-          '<button class="btn btn--sm btn--primary btn--full" onclick="StudyNest.bookRoom(\'' + room.id + '\')"><i data-lucide="calendar"></i><span>Reserve This Unit</span></button>' +
+          '<a class="btn btn--sm btn--primary btn--full" href="service-details.html?id=' + room.id + '"><i data-lucide="calendar"></i><span>Reserve This Unit</span></a>' +
         '</div>' +
       '</div>';
     }).join('');
@@ -306,13 +308,25 @@
     var noiseEl = $('#detail-noise');
     var capEl = $('#detail-capacity');
     var powerEl = $('#detail-power');
+    var categoryEl = $('#detail-category-badge');
+    var imgEl = $('#detail-room-img');
+    var featuresEl = $('#detail-features-list');
 
     if (nameEl) nameEl.textContent = room.name;
     if (priceEl) priceEl.textContent = '$' + room.hourlyRate + ' / hr';
-    if (descEl) descEl.textContent = room.tagline + ' — engineered for unbroken concentration and deep work sessions.';
+    if (descEl) descEl.textContent = room.tagline + ' — purpose-built for unbroken concentration, academic research, and deep work sessions.';
     if (noiseEl) noiseEl.textContent = room.noiseLevel;
-    if (capEl) capEl.textContent = room.capacity + ' Person';
+    if (capEl) capEl.textContent = room.capacity + ' ' + (room.capacity === 1 ? 'Person' : 'People');
     if (powerEl) powerEl.textContent = room.specs.powerOutlets + ' AC & USB Outlets';
+    if (categoryEl) categoryEl.textContent = room.categoryName || 'Acoustic Suite';
+    if (imgEl && room.imageUrl) imgEl.src = room.imageUrl;
+
+    if (featuresEl && room.features) {
+      featuresEl.innerHTML = room.features.map(function(f) {
+        return '<li><i data-lucide="check-circle-2"></i><span>' + f + '</span></li>';
+      }).join('');
+      if (typeof lucide !== 'undefined') lucide.createIcons({ nodes: [featuresEl] });
+    }
   }
 
   function initScrollTop() {

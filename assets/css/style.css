@@ -43,10 +43,14 @@
   --bg-card: #ffffff;
   --bg-card-alt: var(--n50);
   --bg-inset: var(--n100);
-  --text: var(--n900);
-  --text-sec: var(--n600);
-  --text-dim: var(--n500);
-  --text-muted: var(--n400);
+  --bg: var(--n50);
+  --bg-card: #ffffff;
+  --bg-card-alt: var(--n50);
+  --bg-inset: var(--n100);
+  --text: #0f172a;
+  --text-sec: #334155;
+  --text-dim: #475569;
+  --text-muted: #64748b;
   --border: var(--n200);
   --border-light: var(--n100);
 
@@ -77,6 +81,7 @@ html {
 
 body {
   font-family: var(--font);
+  font-weight: 500;
   background: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -183,12 +188,12 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 .rtl-toggle {
   height: 36px; padding: 0 0.625rem; min-width: 36px; display: inline-flex; align-items: center; justify-content: center;
   border-radius: var(--radius-lg); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em;
-  color: var(--text-sec); background: transparent; border: none; cursor: pointer;
+  color: var(--text-sec); background: transparent; border: none !important; cursor: pointer;
   transition: all var(--transition);
 }
 .rtl-toggle:hover { background: var(--bg-inset); color: var(--text); }
 .rtl-toggle.active, html[dir="rtl"] .rtl-toggle {
-  background: var(--primary-600); color: #ffffff; border: none;
+  background: var(--primary-600); color: #ffffff; border: none !important;
 }
 
 .nav__login-btn {
@@ -358,9 +363,9 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 .card:hover .card__title { color: var(--primary-600); }
 .card__rating { display: flex; align-items: center; gap: 0.25rem; font-size: 0.6875rem; color: var(--accent-500); white-space: nowrap; }
 .card__rating i { width: 14px; height: 14px; }
-.card__meta { font-size: 0.6875rem; color: var(--text-dim); margin-top: 0.25rem; }
+.card__meta { font-size: 0.75rem; font-weight: 600; color: var(--text-sec); margin-top: 0.25rem; }
 .card__features { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.375rem; }
-.card__features li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.6875rem; color: var(--text-sec); }
+.card__features li { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 500; color: var(--text-sec); }
 .card__features i { color: var(--success-500); flex-shrink: 0; width: 14px; height: 14px; }
 
 .card__footer {
@@ -371,16 +376,16 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 
 /* ─── 8. Forms ─── */
 .form-label {
-  display: block; font-size: 0.6875rem; font-weight: 500;
+  display: block; font-size: 0.75rem; font-weight: 600;
   text-transform: uppercase; letter-spacing: 0.05em;
-  color: var(--text-dim); margin-bottom: 0.375rem;
+  color: var(--text-sec); margin-bottom: 0.375rem;
 }
 .form-input, .form-select {
   width: 100%; height: 2.75rem; padding: 0 0.875rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border);
   background: var(--bg-card); color: var(--text);
-  font-size: 0.8125rem; outline: none;
+  font-size: 0.875rem; font-weight: 500; outline: none;
   transition: border var(--transition);
 }
 .form-input:focus, .form-select:focus { border-color: var(--primary-600); }
@@ -395,13 +400,13 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 
 /* ─── 9. Section Typography ─── */
 .section-eyebrow {
-  font-size: 0.6875rem; font-weight: 600;
+  font-size: 0.75rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: 0.06em;
   color: var(--primary-600);
 }
-.section-title { font-size: 1.5rem; font-weight: 600; color: var(--text); line-height: 1.2; letter-spacing: -0.01em; }
-.section-desc { font-size: 0.875rem; color: var(--text-sec); line-height: 1.6; }
-.section-head { text-align: center; max-width: 640px; margin: 0 auto 2.5rem; }
+.section-title { font-size: 1.625rem; font-weight: 700; color: var(--text); line-height: 1.2; letter-spacing: -0.01em; }
+.section-desc { font-size: 0.9375rem; font-weight: 500; color: var(--text-sec); line-height: 1.65; }
+.section-head { text-align: center; max-width: 660px; margin: 0 auto 2.5rem; }
 .section-head .section-eyebrow { margin-bottom: 0.5rem; }
 .section-head .section-title { margin-bottom: 0.5rem; }
 
@@ -904,23 +909,24 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 
 .community-cta .section-eyebrow,
 .cta-section .section-eyebrow {
-  color: #5eead4 !important; /* Vibrant high-contrast mint cyan */
+  color: #99f6e4 !important; /* Electric high-luminance cyan */
   font-weight: 700 !important;
   letter-spacing: 0.08em;
-  font-size: 0.75rem !important;
+  font-size: 0.8125rem !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .community-cta .section-title,
 .cta-section .section-title {
   color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  font-weight: 800 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .community-cta .section-desc,
 .cta-section .section-desc {
-  color: #ccfbf1 !important; /* Soft light cyan-white */
-  font-size: 0.9375rem !important;
+  color: #e6fffa !important; /* Crisp high-visibility soft white-cyan */
+  font-size: 1rem !important;
   line-height: 1.6;
 }
 
@@ -931,7 +937,7 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
   background: #ffffff !important;
   color: #042f2e !important;
   font-weight: 700 !important;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
   border: none !important;
 }
 
@@ -947,10 +953,12 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 .community-cta .btn--secondary,
 .cta-section .btn--secondary,
 .community-cta .btn--outline-white,
-.cta-section .btn--outline-white {
-  background: rgba(255, 255, 255, 0.15) !important;
+.cta-section .btn--outline-white,
+.community-cta .btn--ghost,
+.cta-section .btn--ghost {
+  background: rgba(255, 255, 255, 0.18) !important;
   color: #ffffff !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.4) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.6) !important;
   font-weight: 600 !important;
   backdrop-filter: blur(8px);
 }
@@ -958,8 +966,10 @@ h1,h2,h3,h4,h5,h6 { line-height: 1.2; }
 .community-cta .btn--secondary:hover,
 .cta-section .btn--secondary:hover,
 .community-cta .btn--outline-white:hover,
-.cta-section .btn--outline-white:hover {
-  background: rgba(255, 255, 255, 0.28) !important;
+.cta-section .btn--outline-white:hover,
+.community-cta .btn--ghost:hover,
+.cta-section .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.32) !important;
   border-color: #ffffff !important;
   color: #ffffff !important;
   transform: translateY(-2px);

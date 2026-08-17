@@ -7,9 +7,131 @@ html[dir="rtl"] body {
   text-align: right;
 }
 
+/* ─── Punctuation & BiDi Plaintext Fix ─── */
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] p,
+html[dir="rtl"] blockquote,
+html[dir="rtl"] .section-title,
+html[dir="rtl"] .section-desc,
+html[dir="rtl"] .hero__title,
+html[dir="rtl"] .hero__sub,
+html[dir="rtl"] .page-hero__title,
+html[dir="rtl"] .page-hero__sub,
+html[dir="rtl"] .explore-hero__title,
+html[dir="rtl"] .explore-hero__sub {
+  unicode-bidi: plaintext;
+  text-align: right;
+}
+
 html[dir="rtl"] input,
 html[dir="rtl"] select,
 html[dir="rtl"] textarea {
+  text-align: right;
+  direction: rtl;
+}
+
+/* ─── Navigation RTL ─── */
+html[dir="rtl"] .nav__logo {
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .nav__links {
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  direction: ltr;
+}
+
+html[dir="rtl"] .nav__cta {
+  order: 1;
+}
+
+html[dir="rtl"] .nav__login-btn {
+  order: 2;
+}
+
+html[dir="rtl"] .dark-toggle {
+  order: 3;
+}
+
+html[dir="rtl"] .rtl-toggle {
+  order: 4;
+  border: none !important;
+}
+
+html[dir="rtl"] .nav__toggle {
+  order: 5;
+}
+
+/* ─── Hero Section RTL Alignment ─── */
+html[dir="rtl"] .hero__content {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero__title,
+html[dir="rtl"] .hero__sub {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero__btns {
+  align-items: flex-start;
+}
+
+html[dir="rtl"] .hero__trust {
+  justify-content: flex-start;
+  direction: rtl;
+}
+
+html[dir="rtl"] .hero__trust-item {
+  flex-direction: row;
+  unicode-bidi: plaintext;
+}
+
+html[dir="rtl"] .hero__trust-item i,
+html[dir="rtl"] .hero__trust-item svg {
+  margin-left: 0.375rem;
+  margin-right: 0;
+}
+
+/* Hero Floater Cards */
+html[dir="rtl"] .hero__floater-top {
+  right: auto;
+  left: 1rem;
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .hero__floater-top .f-label {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero__floater-bottom {
+  direction: rtl;
+}
+
+html[dir="rtl"] .hero__review-text {
+  text-align: right;
+  unicode-bidi: plaintext;
+}
+
+/* Arrow Mirroring */
+html[dir="rtl"] i[data-lucide="arrow-right"],
+html[dir="rtl"] .btn i[data-lucide="arrow-right"],
+html[dir="rtl"] .btn--ghost i[data-lucide="arrow-right"] {
+  transform: scaleX(-1);
+}
+
+/* ─── Cards & Grids RTL ─── */
+html[dir="rtl"] .card {
   text-align: right;
 }
 
@@ -23,16 +145,39 @@ html[dir="rtl"] .card__img-price {
   left: 0.75rem;
 }
 
-html[dir="rtl"] .hero__floater-top {
-  right: auto;
-  left: 1rem;
+html[dir="rtl"] .card__features li i,
+html[dir="rtl"] .card__features li svg {
+  margin-right: 0;
+  margin-left: 0.5rem;
 }
 
-html[dir="rtl"] .hero__floater-bottom {
-  left: auto;
-  right: 1rem;
+html[dir="rtl"] .amenity-item__head i,
+html[dir="rtl"] .amenity-item__head svg {
+  margin-right: 0;
+  margin-left: 0.5rem;
 }
 
+html[dir="rtl"] .cat-card ul,
+html[dir="rtl"] .cat-card li {
+  text-align: right;
+}
+
+html[dir="rtl"] .cat-card li i,
+html[dir="rtl"] .cat-card li svg {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+/* ─── Quick Search Ribbon Bar RTL ─── */
+html[dir="rtl"] .quick-search__form {
+  direction: rtl;
+}
+
+html[dir="rtl"] .quick-search .form-label {
+  text-align: right;
+}
+
+/* ─── Dashboard & Miscellaneous RTL ─── */
 html[dir="rtl"] .toast-container {
   right: auto;
   left: 1rem;
@@ -52,12 +197,5 @@ html[dir="rtl"] .dash-nav-item i,
 html[dir="rtl"] .dash-nav-item svg {
   margin-right: 0;
   margin-left: 0.625rem;
-}
-
-html[dir="rtl"] .cat-card ul,
-html[dir="rtl"] .cat-card li,
-html[dir="rtl"] .hero__trust,
-html[dir="rtl"] .hero__trust-item {
-  text-align: right;
 }
 
