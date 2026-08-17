@@ -7,12 +7,10 @@ html[dir="rtl"] body {
   text-align: right;
 }
 
-html[dir="rtl"] .nav__logo {
-  flex-direction: row-reverse;
-}
-
-html[dir="rtl"] .nav__actions {
-  flex-direction: row-reverse;
+html[dir="rtl"] input,
+html[dir="rtl"] select,
+html[dir="rtl"] textarea {
+  text-align: right;
 }
 
 html[dir="rtl"] .card__img-tag {
@@ -44,3 +42,22 @@ html[dir="rtl"] .scroll-top {
   right: auto;
   left: 1.5rem;
 }
+
+html[dir="rtl"] .dash-sidebar {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+
+html[dir="rtl"] .dash-nav-item i,
+html[dir="rtl"] .dash-nav-item svg {
+  margin-right: 0;
+  margin-left: 0.625rem;
+}
+
+html[dir="rtl"] .cat-card ul,
+html[dir="rtl"] .cat-card li,
+html[dir="rtl"] .hero__trust,
+html[dir="rtl"] .hero__trust-item {
+  text-align: right;
+}
+

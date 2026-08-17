@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us | StudyNest</title>
   <meta name="description" content="Contact the StudyNest team for inquiries, campus tours, or membership assistance.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +16,6 @@
 </head>
 
 <body data-page="contact">
-  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- ══════ HEADER ══════ -->
   <header class="nav" id="main-nav">
@@ -35,9 +35,11 @@
         <a href="contact.html" data-nav="contact" class="active">Contact</a>
       </nav>
       <div class="nav__actions">
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <a href="login.html" class="nav__login-btn">Login</a>
+        <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
-        <a href="dashboard.html" class="nav__cta"><i data-lucide="calendar" style="width:16px;height:16px;display:inline-block;vertical-align:-2px;margin-right:4px"></i>Book Now</a>
       </div>
     </div>
     <div class="nav__mobile">
@@ -47,13 +49,33 @@
       <a href="membership.html" data-nav="membership">Membership</a>
       <a href="about.html" data-nav="about">About</a>
       <a href="contact.html" data-nav="contact" class="active">Contact</a>
-      <a href="faq.html" data-nav="faq">FAQs</a>
-      <a href="dashboard.html" class="nav__mobile-cta">Book a Study Slot</a>
+      <a href="login.html" data-nav="login">Login</a>
+      <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
 
   <!-- ══════ MAIN ══════ -->
-  <main id="main" style="padding-top: 5rem; padding-bottom: 4rem;">
+  <main id="main" style="padding-bottom: 4rem;">
+
+    <!-- Page Hero -->
+    <section class="page-hero" id="contact-hero-section" style="margin-bottom: 3.5rem;">
+      <div class="page-hero__bg">
+        <div class="page-hero__bg-img"></div>
+        <div class="page-hero__bg-overlay"></div>
+        <div class="page-hero__bg-glow"></div>
+      </div>
+      <div class="container">
+        <div class="page-hero__inner">
+          <div class="badge">
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)" class="animate-pulse"></span>
+            <span>24/7 Member Concierge Support</span>
+          </div>
+          <h1 class="page-hero__title">We Are Here to Assist Your Learning Journey.</h1>
+          <p class="page-hero__sub">Have questions about memberships, PIN passcode access, room bookings, or institutional university grants? Our concierge support team is at your service.</p>
+        </div>
+      </div>
+    </section>
+
     <div class="container" style="max-width: 960px;">
       <div class="section-head">
         <p class="section-eyebrow">Help Desk &amp; Inquiries</p>
@@ -82,9 +104,9 @@
         </div>
       </div>
 
-      <div class="card" style="padding:2rem;">
+      <div class="card" style="padding:2rem; margin-bottom: 3.5rem;">
         <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1rem;">Send Us a Message</h3>
-        <form onsubmit="event.preventDefault(); alert('Message submitted successfully!');">
+        <form onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Message submitted successfully! Our support team will reply within 1 hour.', 'success'); } else { alert('Message submitted successfully!'); } this.reset();">
           <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
             <div>
               <label class="form-label">Your Name</label>
@@ -102,23 +124,175 @@
           <button type="submit" class="btn btn--primary"><i data-lucide="send"></i><span>Send Message</span></button>
         </form>
       </div>
+
+      <!-- NEW SECTION 1: Interactive Campus Map & Location Directions -->
+      <section class="map-section" id="map-integration-section" style="margin-bottom: 3.5rem;">
+        <div class="section-head" style="margin-bottom: 1.5rem;">
+          <p class="section-eyebrow">Interactive Campus Location</p>
+          <h2 class="section-title">Find StudyNest Main Center</h2>
+          <p class="section-desc">Conveniently situated in the heart of the university academic corridor with 24/7 keycard turnstiles.</p>
+        </div>
+
+        <div class="card" style="padding: 1.25rem; overflow: hidden;">
+          <div style="width: 100%; height: 360px; border-radius: var(--radius-xl); overflow: hidden; position: relative;">
+            <iframe 
+              title="StudyNest Campus Location Map"
+              src="https://maps.google.com/maps?q=Boston+University+Library&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i data-lucide="bus" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">Public Transit</h5>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">MBTA Green Line (B) Comm. Ave stop — 2 minute walk.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i data-lucide="car" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">Underground Parking</h5>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">Validated 2-hour parking at Academic Center Garage.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
+              <i data-lucide="key" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <div>
+                <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">24/7 Keycard Entry</h5>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">Smartphone NFC turnstiles open round the clock.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEW SECTION 2: 24/7 Live Keypad PIN Access & Emergency Support Desk -->
+      <section class="pin-support-section" id="concierge-assistance-section" style="margin-bottom: 2rem;">
+        <div class="card" style="padding: 2.25rem; background: linear-gradient(135deg, var(--bg-card), var(--bg-card-alt)); border: 1px solid var(--primary-400);">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+            <div>
+              <div class="badge" style="background: rgba(13,148,136,0.12); color: var(--primary-700); border-color: var(--primary-300); margin-bottom: 0.5rem;">
+                <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)" class="animate-pulse"></span>
+                <span>Live Concierge Desk</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Need Immediate Keypad Access or PIN Recovery?</h3>
+              <p style="font-size: 0.875rem; color: var(--text-sec);">Locked out of your pod or lost your 4-digit passcode? Our duty floor marshal responds in under 2 minutes.</p>
+            </div>
+
+            <div>
+              <a href="tel:+18005557883" class="btn btn--primary" style="gap: 0.5rem;"><i data-lucide="phone-call"></i><span>Call Emergency Line</span></a>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">Instant SMS PIN Resend</div>
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">Text 'PIN' to +1 (800) 555-NEST</div>
+            </div>
+
+            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">On-Duty Floor Marshal</div>
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">Ground Floor Concierge Desk</div>
+            </div>
+
+            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">Average Response Time</div>
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--success-600);">&lt; 90 Seconds Guaranteed</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   </main>
 
   <!-- ══════ FOOTER ══════ -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
-          </svg>
-          <span>StudyNest</span>
+      <div class="footer__grid">
+        <!-- Brand & Description & Social Icons -->
+        <div class="footer__col footer__col--brand">
+          <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
+              <path d="M16 10v16"/>
+              <path d="M10 4q6-3 12 0"/>
+            </svg>
+            <span>StudyNest</span>
+          </a>
+          <p class="footer__desc">
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+          </p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
         </div>
-        <div class="footer__links">
-          <a href="index.html">Home</a><a href="services.html">Rooms</a><a href="membership.html">Membership</a><a href="about.html">About</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a><a href="patron-login.html">Member Login</a><a href="dashboard.html">Dashboard</a>
+
+        <!-- Quick Links -->
+        <div class="footer__col">
+          <h4 class="footer__title">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Rooms &amp; Pods</a></li>
+            <li><a href="membership.html">Membership Plans</a></li>
+          </ul>
         </div>
+
+        <!-- Contact Heading & Info -->
+        <div class="footer__col">
+          <h4 class="footer__title">Contact Us</h4>
+          <ul class="footer__contact">
+            <li>
+              <i data-lucide="map-pin"></i>
+              <span>742 Evergreen Terrace, Suite 100, Boston, MA 02115</span>
+            </li>
+            <li>
+              <i data-lucide="phone"></i>
+              <a href="tel:+18005557883">+1 (800) 555-STUDY</a>
+            </li>
+            <li>
+              <i data-lucide="mail"></i>
+              <a href="mailto:support@studynest.com">support@studynest.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer__col">
+          <h4 class="footer__title">Newsletter</h4>
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
+          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+            <div class="footer__input-group">
+              <input type="email" placeholder="Enter your email" required class="footer__input">
+              <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
+                <i data-lucide="send"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright & Legal -->
+      <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <div class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <span class="footer__divider">•</span>
+          <a href="#">Terms of Service</a>
+          <span class="footer__divider">•</span>
+          <a href="#">Cookie Preferences</a>
+        </div>
       </div>
     </div>
   </footer>

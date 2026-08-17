@@ -180,11 +180,74 @@
     renderDashboardPasses();
   }
 
+  function initDashboardTabs() {
+    var tabBtns = document.querySelectorAll('.dash-nav-item[data-tab]');
+    var tabPanels = document.querySelectorAll('.dash-tab-panel');
+    if (!tabBtns.length) return;
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var tabId = btn.getAttribute('data-tab');
+        tabBtns.forEach(function (b) { b.classList.remove('active'); });
+        tabPanels.forEach(function (p) { p.classList.remove('active'); });
+
+        btn.classList.add('active');
+        var targetPanel = document.getElementById('panel-' + tabId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+        var titleEl = document.getElementById('dash-top-title');
+        if (titleEl) {
+          var titleMap = {
+            'book': 'Passes',
+            'account': 'Settings',
+            'history': 'History'
+          };
+          titleEl.textContent = titleMap[tabId] || 'Dashboard';
+        }
+      });
+    });
+  }
+
+  function initMobileSidebar() {
+    var hamburgerBtn = $('#dash-hamburger-btn');
+    var closeBtn = $('#dash-sidebar-close');
+    var sidebar = $('#dash-sidebar');
+    var backdrop = $('#dash-sidebar-backdrop');
+    var tabBtns = document.querySelectorAll('.dash-nav-item');
+
+    if (!sidebar) return;
+
+    function openSidebar() {
+      sidebar.classList.add('open');
+      if (backdrop) backdrop.classList.add('open');
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('open');
+    }
+
+    if (hamburgerBtn) hamburgerBtn.addEventListener('click', openSidebar);
+    if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
+    if (backdrop) backdrop.addEventListener('click', closeSidebar);
+
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (window.innerWidth <= 768) {
+          closeSidebar();
+        }
+      });
+    });
+  }
+
   function init() {
     var quickBookForm = $('#quick-book-form');
     if (quickBookForm) quickBookForm.addEventListener('submit', handleQuickBook);
 
     if (document.body.dataset.page === 'dashboard') {
+      initDashboardTabs();
+      initMobileSidebar();
       renderDashboardPasses();
       renderQuickBookOptions();
       renderHistoryTable();

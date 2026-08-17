@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Member Dashboard | StudyNest</title>
-  <meta name="description" content="Manage your study room bookings, view access PIN passcodes, and track your session history at StudyNest.">
+  <title>Patron Dashboard | StudyNest</title>
+  <meta name="description" content="Manage your study room passes, door keypad PIN codes, and membership settings.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,215 +16,240 @@
 </head>
 
 <body data-page="dashboard">
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- ══════ HEADER ══════ -->
-  <header class="nav" id="main-nav">
-    <div class="nav__inner">
-      <a class="nav__logo" href="index.html" aria-label="Home">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
-        </svg>
-        <span>StudyNest</span>
-      </a>
-      <nav class="nav__links" aria-label="Primary">
-        <a href="index.html" data-nav="home">Home</a>
-        <a href="home-2.html" data-nav="home-2">Home 2</a>
-        <a href="services.html" data-nav="services">Rooms</a>
-        <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about">About</a>
-        <a href="contact.html" data-nav="contact">Contact</a>
-      </nav>
-      <div class="nav__actions">
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
-        <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
-        <a href="patron-account.html" class="btn btn--sm btn--ghost" style="margin-left:0.5rem;"><i data-lucide="user"></i><span>Account</span></a>
-      </div>
-    </div>
-    <div class="nav__mobile">
-      <a href="index.html" data-nav="home">Home</a>
-      <a href="home-2.html" data-nav="home-2">Home 2</a>
-      <a href="services.html" data-nav="services">Rooms</a>
-      <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about">About</a>
-      <a href="contact.html" data-nav="contact">Contact</a>
-      <a href="patron-account.html">Account</a>
-      <a href="dashboard.html" class="nav__mobile-cta">Book a Study Slot</a>
-    </div>
-  </header>
-
-  <!-- ══════ MAIN ══════ -->
-  <main id="main">
-
-    <!-- Overview -->
-    <section class="dash-overview" id="dash-overview-section">
-      <div class="container">
-        <div class="dash-overview__top">
-          <div class="dash-overview__user">
-            <div class="dash-overview__avatar">A</div>
-            <div>
-              <div class="dash-overview__name-row">
-                <h1 class="dash-overview__name">Alexander Wright</h1>
-                <span class="badge badge--tier">Scholar Pro</span>
-              </div>
-              <p class="dash-overview__meta">Member ID: <strong>MBR-8841</strong> • alex.wright@university.edu</p>
-            </div>
-          </div>
-          <div class="dash-overview__actions">
-            <a href="patron-account.html" class="btn btn--sm btn--ghost">Account Settings</a>
-            <a href="services.html" class="btn btn--sm btn--primary">
-              <i data-lucide="plus-circle" style="width:16px;height:16px"></i>
-              <span>Book New Study Slot</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="dash-metrics">
-          <div class="dash-metric">
-            <p class="dash-metric__label">Available Study Hours</p>
-            <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
-              <span class="dash-metric__value dash-metric__value--primary">28</span>
-              <span class="dash-metric__extra">/ 40 hrs left</span>
-            </div>
-          </div>
-          <div class="dash-metric">
-            <p class="dash-metric__label">Active Passes</p>
-            <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
-              <span class="dash-metric__value dash-metric__value--default" id="active-count">0</span>
-              <span class="dash-metric__extra">Sessions</span>
-            </div>
-          </div>
-          <div class="dash-metric">
-            <p class="dash-metric__label">Total Time Immersed</p>
-            <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
-              <span class="dash-metric__value dash-metric__value--default">142.5</span>
-              <span class="dash-metric__extra">Hours</span>
-            </div>
-          </div>
-          <div class="dash-metric">
-            <p class="dash-metric__label">Plan Renewal Date</p>
-            <div class="dash-metric__sub" style="margin-top:0.375rem">
-              <p class="dash-metric__sub-text">September 1, 2026</p>
-              <p class="dash-metric__sub-note">Auto-renewal active</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Active Passes -->
-    <section class="dash-passes" id="dash-passes-section">
-      <div class="container">
-        <div class="dash-passes__header">
-          <h2>Upcoming Study Passes &amp; Access PINs</h2>
-          <p>Present your 4-digit PIN on the electronic door keypad at your designated start time.</p>
-        </div>
-        <div id="passes-container"></div>
-      </div>
-    </section>
-
-    <!-- Quick Book -->
-    <section class="dash-quickbook" id="dash-quickbook-section">
-      <div class="container" style="text-align:center">
-        <div class="section-head">
-          <p class="section-eyebrow">Fast Reservation</p>
-          <h2 class="section-title">Instant Quick-Book Study Slot</h2>
-          <p class="section-desc">One-click reserve with your active member credit balance.</p>
-        </div>
-
-        <form id="quick-book-form" class="dash-quickbook__form">
-          <div>
-            <label class="form-label">Space</label>
-            <select id="quick-room-select" class="form-select"></select>
-          </div>
-          <div>
-            <label class="form-label">Date</label>
-            <input type="date" id="quick-date" class="form-input">
-          </div>
-          <div>
-            <label class="form-label">Time Window</label>
-            <select id="quick-time" class="form-select">
-              <option value="09:00 AM – 12:00 PM">09:00 AM – 12:00 PM (3h)</option>
-              <option value="02:00 PM – 05:00 PM" selected>02:00 PM – 05:00 PM (3h)</option>
-              <option value="06:00 PM – 09:00 PM">06:00 PM – 09:00 PM (3h)</option>
-              <option value="09:00 PM – 12:00 AM">09:00 PM – 12:00 AM (3h)</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full" style="height:2.75rem">
-            <i data-lucide="zap" style="width:16px;height:16px"></i>
-            <span>Instant Reserve</span>
+  <div class="dash-app-wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="dash-sidebar" id="dash-sidebar">
+      <div>
+        <div class="dash-sidebar__brand">
+          <a href="index.html" class="dash-sidebar__logo" aria-label="StudyNest Home">
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
+              <path d="M16 10v16"/>
+              <path d="M10 4q6-3 12 0"/>
+            </svg>
+            <span>StudyNest</span>
+          </a>
+          <button type="button" class="dash-sidebar-close" id="dash-sidebar-close" aria-label="Close navigation menu">
+            <i data-lucide="x"></i>
           </button>
-        </form>
-      </div>
-    </section>
+        </div>
 
-    <!-- History & Plan -->
-    <section class="dash-history" id="dash-history-section">
-      <div class="container">
-        <div class="dash-history__grid">
-          <div>
-            <div class="dash-history__title">
-              <i data-lucide="history"></i>
-              <h3>Previous Session Logs &amp; Attendance</h3>
-            </div>
-            <div class="table-wrap">
-              <table class="data-table">
-                <thead>
-                  <tr>
-                    <th>Space</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Duration</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody id="history-tbody"></tbody>
-              </table>
+        <!-- Sidebar Menu Navigation Buttons + Sign Out (Directly after buttons) -->
+        <nav class="dash-sidebar__menu">
+          <button type="button" class="dash-nav-item active" data-tab="book">
+            <i data-lucide="calendar"></i>
+            <span>Book &amp; Active Passes</span>
+          </button>
+          <button type="button" class="dash-nav-item" data-tab="account">
+            <i data-lucide="user-cog"></i>
+            <span>Account Settings</span>
+          </button>
+          <button type="button" class="dash-nav-item" data-tab="history">
+            <i data-lucide="history"></i>
+            <span>Booking History</span>
+          </button>
+          <a href="index.html" class="dash-nav-item dash-nav-item--logout">
+            <i data-lucide="log-out"></i>
+            <span>Sign Out</span>
+          </a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- Mobile Drawer Backdrop Overlay -->
+    <div class="dash-sidebar-backdrop" id="dash-sidebar-backdrop"></div>
+
+    <!-- Main Content Area -->
+    <div class="dash-main">
+      <!-- Top Bar (Hamburger Button + Title & RTL / Theme Controls in Top Right Corner) -->
+      <div class="dash-top-bar">
+        <div class="dash-top-bar__left">
+          <button type="button" class="dash-hamburger-btn" id="dash-hamburger-btn" aria-label="Toggle navigation menu">
+            <i data-lucide="menu"></i>
+          </button>
+          <h1 class="dash-top-bar__title" id="dash-top-title">Passes</h1>
+        </div>
+
+        <div class="dash-top-bar__controls">
+          <button class="dash-toggle-btn rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
+          <button class="dash-toggle-btn dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+            <i data-lucide="moon"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB PANEL 1: Book & Active Passes -->
+      <div class="dash-tab-panel active" id="panel-book">
+        <!-- Overview Banner & Metrics -->
+        <div class="dash-overview">
+          <div class="dash-overview__top">
+            <div class="dash-overview__user">
+              <div class="dash-overview__avatar">A</div>
+              <div>
+                <div class="dash-overview__name-row">
+                  <h2 class="dash-overview__name">Alexander Wright</h2>
+                  <span class="badge badge--tier">Scholar Pro</span>
+                </div>
+                <p class="dash-overview__meta">Member ID: <strong>MBR-8841</strong> • alex.wright@university.edu</p>
+              </div>
             </div>
           </div>
 
-          <div>
-            <div class="dash-history__title">
-              <i data-lucide="credit-card"></i>
-              <h3>Plan Details</h3>
+          <div class="dash-metrics">
+            <div class="dash-metric">
+              <p class="dash-metric__label">Available Study Hours</p>
+              <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
+                <span class="dash-metric__value dash-metric__value--primary">28</span>
+                <span class="dash-metric__extra">/ 40 hrs left</span>
+              </div>
             </div>
-            <div class="plan-card">
-              <p class="plan-card__eyebrow">Active Subscription</p>
-              <h4>Scholar Pro Tier</h4>
-              <p class="plan-card__price">$79.00 / month</p>
-              <ul>
-                <li><i data-lucide="check-circle-2"></i><span>60 Monthly Pod Hours</span></li>
-                <li><i data-lucide="check-circle-2"></i><span>14-Day Advanced Slot Booking</span></li>
-                <li><i data-lucide="check-circle-2"></i><span>High-Speed 4K Monitor Access</span></li>
-              </ul>
-              <a href="membership.html" class="btn btn--sm btn--ghost btn--full">Manage / Change Plan</a>
+            <div class="dash-metric">
+              <p class="dash-metric__label">Active Passes</p>
+              <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
+                <span class="dash-metric__value dash-metric__value--default" id="active-count">0</span>
+                <span class="dash-metric__extra">Sessions</span>
+              </div>
+            </div>
+            <div class="dash-metric">
+              <p class="dash-metric__label">Total Time Immersed</p>
+              <div style="display:flex;align-items:baseline;gap:0.25rem;margin-top:0.25rem">
+                <span class="dash-metric__value dash-metric__value--default">142.5</span>
+                <span class="dash-metric__extra">Hours</span>
+              </div>
+            </div>
+            <div class="dash-metric">
+              <p class="dash-metric__label">Plan Renewal Date</p>
+              <div class="dash-metric__sub" style="margin-top:0.375rem">
+                <p class="dash-metric__sub-text">September 1, 2026</p>
+                <p class="dash-metric__sub-note">Auto-renewal active</p>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Active Room Passes & Door PIN Codes -->
+        <section class="dash-passes">
+          <div class="dash-passes__header">
+            <h2>Active Room Passes &amp; Keypad PINs</h2>
+            <p>Use your 4-digit PIN code on the room keypad for entry.</p>
+          </div>
+          <div id="passes-container"></div>
+        </section>
+
+        <!-- Quick Booking Form -->
+        <section class="dash-quickbook">
+          <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:0.75rem; color:var(--text)">Reserve New Study Slot</h3>
+          <form class="dash-quickbook__form" id="quick-book-form">
+            <div>
+              <label class="form-label">Select Study Room / Pod</label>
+              <select class="form-input" id="quick-room-select" required></select>
+            </div>
+            <div>
+              <label class="form-label">Booking Date</label>
+              <input type="date" class="form-input" id="quick-date-select" required>
+            </div>
+            <div>
+              <label class="form-label">Time Slot</label>
+              <select class="form-input" id="quick-time-select" required>
+                <option value="09:00 AM – 12:00 PM">09:00 AM – 12:00 PM (3 hrs)</option>
+                <option value="12:00 PM – 03:00 PM">12:00 PM – 03:00 PM (3 hrs)</option>
+                <option value="03:00 PM – 06:00 PM">03:00 PM – 06:00 PM (3 hrs)</option>
+                <option value="06:00 PM – 09:00 PM">06:00 PM – 09:00 PM (3 hrs)</option>
+              </select>
+            </div>
+            <div>
+              <button type="submit" class="btn btn--primary btn--full" style="height:2.625rem;">
+                <i data-lucide="plus-circle"></i>
+                <span>Confirm Booking</span>
+              </button>
+            </div>
+          </form>
+        </section>
       </div>
-    </section>
 
-  </main>
+      <!-- TAB PANEL 2: Account Settings -->
+      <div class="dash-tab-panel" id="panel-account">
+        <div class="card" style="padding:2rem; margin-bottom:1.5rem;">
+          <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1.25rem; color:var(--text)">Personal Profile Information</h3>
+          <form onsubmit="event.preventDefault(); window.StudyNest.showToast('Profile settings updated successfully!', 'success');">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
+              <div>
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" value="Alexander Wright" required>
+              </div>
+              <div>
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" value="alex.wright@university.edu" required>
+              </div>
+            </div>
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1.5rem;">
+              <div>
+                <label class="form-label">Member ID</label>
+                <input type="text" class="form-input" value="MBR-8841" disabled style="opacity:0.7;">
+              </div>
+              <div>
+                <label class="form-label">Membership Tier</label>
+                <select class="form-input">
+                  <option value="scholar" selected>Scholar Pro ($79/mo)</option>
+                  <option value="basic">Patron Pass (Free)</option>
+                  <option value="resident">Resident Fellow ($149/mo)</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--primary"><i data-lucide="save"></i><span>Save Profile Changes</span></button>
+          </form>
+        </div>
 
-  <!-- ══════ FOOTER ══════ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
-          </svg>
-          <span>StudyNest</span>
+        <div class="card" style="padding:2rem;">
+          <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1.25rem; color:var(--text)">Security &amp; Password</h3>
+          <form onsubmit="event.preventDefault(); window.StudyNest.showToast('Password updated successfully!', 'success');">
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
+              <div>
+                <label class="form-label">Current Password</label>
+                <div class="password-input-group">
+                  <input type="password" class="form-input" value="password123" required>
+                  <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility(this)"><i data-lucide="eye"></i></button>
+                </div>
+              </div>
+              <div>
+                <label class="form-label">New Password</label>
+                <div class="password-input-group">
+                  <input type="password" class="form-input" placeholder="New password" required>
+                  <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility(this)"><i data-lucide="eye"></i></button>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn--secondary" style="margin-top:0.5rem;"><i data-lucide="key"></i><span>Update Password</span></button>
+          </form>
         </div>
-        <div class="footer__links">
-          <a href="index.html">Home</a><a href="services.html">Rooms</a><a href="membership.html">Membership</a><a href="about.html">About</a><a href="faq.html">FAQs</a><a href="contact.html">Contact</a><a href="patron-login.html">Member Login</a><a href="dashboard.html">Dashboard</a>
-        </div>
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+      </div>
+
+      <!-- TAB PANEL 3: Booking History -->
+      <div class="dash-tab-panel" id="panel-history">
+        <section class="dash-history" style="margin-bottom:0;">
+          <div class="dash-history__title">
+            <i data-lucide="history"></i>
+            <h3>Recent Session History &amp; Logs</h3>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Space Name</th>
+                  <th>Date</th>
+                  <th>Time Slot</th>
+                  <th>Duration</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="history-tbody"></tbody>
+            </table>
+          </div>
+        </section>
       </div>
     </div>
-  </footer>
+  </div>
 
-  <button class="scroll-top" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
   <div id="toast-container" class="toast-container"></div>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
