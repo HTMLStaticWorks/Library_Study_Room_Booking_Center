@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Room Details | StudyNest</title>
-  <meta name="description" content="View complete acoustic, technical, and amenity specifications for individual study rooms at StudyNest.">
+  <meta name="description"
+    content="View complete acoustic, technical, and amenity specifications for individual study rooms at StudyNest.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -21,22 +23,27 @@
   <header class="nav" id="main-nav">
     <div class="nav__inner">
       <a class="nav__logo" href="index.html" aria-label="Home">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+          <path d="M16 10v16" />
+          <path d="M10 4q6-3 12 0" />
         </svg>
         <span>StudyNest</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
         <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="about.html" data-nav="about">About</a>
         <a href="services.html" data-nav="services">Rooms</a>
         <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about">About</a>
         <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
       <div class="nav__actions">
-        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+          title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i
+            data-lucide="moon"></i></button>
         <a href="login.html" class="nav__login-btn">Login</a>
         <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
@@ -45,11 +52,21 @@
     <div class="nav__mobile">
       <a href="index.html" data-nav="home">Home</a>
       <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="about.html" data-nav="about">About</a>
       <a href="services.html" data-nav="services" class="active">Rooms</a>
       <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about">About</a>
       <a href="contact.html" data-nav="contact">Contact</a>
       <a href="login.html" data-nav="login">Login</a>
+      <div class="nav__mobile-tools">
+        <button class="dark-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="rtl-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR">
+          <i data-lucide="globe"></i>
+          <span class="rtl-label">RTL Mode</span>
+        </button>
+      </div>
       <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
@@ -58,29 +75,38 @@
   <main id="main" style="padding-top: 6.5rem; padding-bottom: 4.5rem;">
 
     <div class="container" style="max-width: 1140px;">
-      <div id="room-detail-content" style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2rem; align-items: start;">
-        
+      <div id="room-detail-content"
+        style="display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 2rem; align-items: start;">
+
         <!-- LEFT COLUMN: Main Specifications & Technical Environment -->
         <div style="display: flex; flex-direction: column; gap: 2rem;">
-          
+
           <!-- Card 1: Main Room Overview & Image -->
           <div class="card" style="padding: 2.25rem;">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
+            <div
+              style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.25rem;">
               <div>
-                <span class="badge badge--primary" id="detail-category-badge" style="margin-bottom: 0.5rem;">Acoustic Suite</span>
+                <span class="badge badge--primary" id="detail-category-badge" style="margin-bottom: 0.5rem;">Acoustic
+                  Suite</span>
                 <h1 class="section-title" style="margin: 0.25rem 0;" id="detail-room-name">Silent Solo Pod Alpha</h1>
-                <p class="section-desc" id="detail-room-desc">Zero-noise acoustic pod engineered for unbroken concentration and deep work sessions.</p>
+                <p class="section-desc" id="detail-room-desc">Zero-noise acoustic pod engineered for unbroken
+                  concentration and deep work sessions.</p>
               </div>
-              <div style="font-size: 2rem; font-weight: 800; color: var(--primary-600); letter-spacing: -0.02em;" id="detail-room-price">$19 / hr</div>
+              <div style="font-size: 2rem; font-weight: 800; color: var(--primary-600); letter-spacing: -0.02em;"
+                id="detail-room-price">$19 / hr</div>
             </div>
 
             <!-- Room Main Image Banner -->
-            <div style="width: 100%; height: 340px; border-radius: var(--radius-xl); overflow: hidden; margin: 1.5rem 0; border: 1px solid var(--border); box-shadow: var(--shadow-md);">
-              <img id="detail-room-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Room preview image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div
+              style="width: 100%; height: 340px; border-radius: var(--radius-xl); overflow: hidden; margin: 1.5rem 0; border: 1px solid var(--border); box-shadow: var(--shadow-md);">
+              <img id="detail-room-img"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                alt="Room preview image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             </div>
 
             <!-- Core Specs Grid -->
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
+            <div
+              style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
               <div class="amenity-item">
                 <div class="amenity-item__head"><i data-lucide="volume-x"></i><span>Noise Level</span></div>
                 <p id="detail-noise" style="font-weight: 600; color: var(--text);">0 dB — Total Silence</p>
@@ -101,8 +127,10 @@
 
             <!-- Features List -->
             <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-light);">
-              <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Included Executive Equipment &amp; Amenities</h3>
-              <ul class="card__features" id="detail-features-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.875rem;">
+              <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Included
+                Executive Equipment &amp; Amenities</h3>
+              <ul class="card__features" id="detail-features-list"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0.875rem;">
                 <li><i data-lucide="check-circle-2"></i><span>Full soundproof double-glazed glass walls</span></li>
                 <li><i data-lucide="check-circle-2"></i><span>Adjustable LED desk lighting (2700K - 5000K)</span></li>
                 <li><i data-lucide="check-circle-2"></i><span>Ergonomic Herman Miller Aeron posture chair</span></li>
@@ -114,44 +142,62 @@
 
           <!-- NEW SECTION: Official Acoustic & Technical Environment Specifications -->
           <div class="card" id="tech-specs-card" style="padding: 2.25rem;">
-            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+            <div
+              style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem; color: var(--primary-600);">
               <i data-lucide="sliders" style="width: 22px; height: 22px;"></i>
-              <span style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Technical Specifications</span>
+              <span
+                style="font-size: 0.8125rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Technical
+                Specifications</span>
             </div>
-            <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Acoustic &amp; Hardware Calibration Data</h3>
-            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6; margin-bottom: 1.75rem;">Every study unit is independently audited and certified for decibel containment, electromagnetic compliance, and ergonomic standards.</p>
+            <h3 style="font-size: 1.375rem; font-weight: 700; color: var(--text); margin-bottom: 1rem;">Acoustic &amp;
+              Hardware Calibration Data</h3>
+            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6; margin-bottom: 1.75rem;">Every
+              study unit is independently audited and certified for decibel containment, electromagnetic compliance, and
+              ergonomic standards.</p>
 
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
-              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+              <div
+                style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div
+                  style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
                   <i data-lucide="shield-check"></i>
                   <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">STC 52 Acoustic Rating</h4>
                 </div>
-                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Multi-layer sound damping perimeter seals prevent sound leakage up to 52 dB across all human voice spectrums.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Multi-layer sound
+                  damping perimeter seals prevent sound leakage up to 52 dB across all human voice spectrums.</p>
               </div>
 
-              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+              <div
+                style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div
+                  style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
                   <i data-lucide="wind"></i>
                   <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">HEPA H14 Air Filtration</h4>
                 </div>
-                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Medical-grade HEPA filters execute 12 complete air exchanges per hour to maintain optimal oxygen levels.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Medical-grade HEPA
+                  filters execute 12 complete air exchanges per hour to maintain optimal oxygen levels.</p>
               </div>
 
-              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+              <div
+                style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div
+                  style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
                   <i data-lucide="key"></i>
                   <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">IoT Passcode Verification</h4>
                 </div>
-                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Electronic door keypads unlock automatically via unique 4-digit PIN generated upon calendar reservation.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Electronic door
+                  keypads unlock automatically via unique 4-digit PIN generated upon calendar reservation.</p>
               </div>
 
-              <div style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
-                <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
+              <div
+                style="padding: 1.25rem; background: var(--bg-card-alt); border-radius: var(--radius-xl); border: 1px solid var(--border-light);">
+                <div
+                  style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; color: var(--primary-600);">
                   <i data-lucide="sun"></i>
                   <h4 style="font-weight: 700; font-size: 0.9375rem; color: var(--text);">Circadian Task Lighting</h4>
                 </div>
-                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Dual-spectrum LED lamps feature adjustable color temperature controls (2700K warm to 5000K daylight).</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Dual-spectrum LED
+                  lamps feature adjustable color temperature controls (2700K warm to 5000K daylight).</p>
               </div>
             </div>
           </div>
@@ -160,18 +206,22 @@
 
         <!-- RIGHT COLUMN: Sticky Official Reservation Form & Policy -->
         <div style="display: flex; flex-direction: column; gap: 1.5rem; position: sticky; top: 5.5rem;">
-          
+
           <!-- Booking Reservation Card -->
-          <div class="card" style="padding: 1.75rem; border: 1px solid var(--primary-400); box-shadow: var(--shadow-lg);">
+          <div class="card"
+            style="padding: 1.75rem; border: 1px solid var(--primary-400); box-shadow: var(--shadow-lg);">
             <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
               <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text);">Reserve This Space</h3>
-              <span class="badge badge--available"><i data-lucide="check-circle" style="width:12px;height:12px"></i> Available</span>
+              <span class="badge badge--available"><i data-lucide="check-circle" style="width:12px;height:12px"></i>
+                Available</span>
             </div>
 
-            <form onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.bookRoom) { window.StudyNest.bookRoom('1'); } else { alert('Reservation confirmed! PIN passcode generated.'); }">
+            <form
+              onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.bookRoom) { window.StudyNest.bookRoom('1'); } else { alert('Reservation confirmed! PIN passcode generated.'); }">
               <div style="margin-bottom: 1rem;">
                 <label class="form-label" style="font-size: 0.8125rem; font-weight: 600;">Select Date</label>
-                <input type="date" class="form-input" style="padding: 0.625rem; font-size: 0.875rem;" required value="2026-08-18">
+                <input type="date" class="form-input" style="padding: 0.625rem; font-size: 0.875rem;" required
+                  value="2026-08-18">
               </div>
 
               <div style="margin-bottom: 1rem;">
@@ -195,16 +245,20 @@
                 </select>
               </div>
 
-              <div style="padding: 1rem; background: var(--bg-card-alt); border-radius: var(--radius-lg); margin-bottom: 1.25rem; border: 1px solid var(--border-light);">
-                <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.25rem;">
+              <div
+                style="padding: 1rem; background: var(--bg-card-alt); border-radius: var(--radius-lg); margin-bottom: 1.25rem; border: 1px solid var(--border-light);">
+                <div
+                  style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.25rem;">
                   <span>Base Rate</span>
                   <span>$19.00 × 2 hrs</span>
                 </div>
-                <div style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.5rem;">
+                <div
+                  style="display: flex; justify-content: space-between; font-size: 0.8125rem; color: var(--text-sec); margin-bottom: 0.5rem;">
                   <span>Keypad PIN Service</span>
                   <span style="color: var(--success-600); font-weight: 600;">FREE</span>
                 </div>
-                <div style="display: flex; justify-content: space-between; font-size: 1rem; font-weight: 700; color: var(--text); border-top: 1px solid var(--border); padding-top: 0.5rem;">
+                <div
+                  style="display: flex; justify-content: space-between; font-size: 1rem; font-weight: 700; color: var(--text); border-top: 1px solid var(--border); padding-top: 0.5rem;">
                   <span>Total Payable</span>
                   <span style="color: var(--primary-600);">$38.00</span>
                 </div>
@@ -218,14 +272,22 @@
 
           <!-- Official Etiquette Card -->
           <div class="card" style="padding: 1.5rem; background: var(--bg-card-alt);">
-            <h4 style="font-size: 0.9375rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <h4
+              style="font-size: 0.9375rem; font-weight: 700; color: var(--text); margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
               <i data-lucide="shield" style="color: var(--primary-600); width: 18px; height: 18px;"></i>
               <span>Official Pod Guarantee</span>
             </h4>
-            <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8125rem; color: var(--text-sec);">
-              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>100% Free cancellation up to 1 hour prior.</span></li>
-              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Instant SMS door code sent to your phone.</span></li>
-              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check" style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Strict zero-decibel quiet environment.</span></li>
+            <ul
+              style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.8125rem; color: var(--text-sec);">
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check"
+                  style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>100%
+                  Free cancellation up to 1 hour prior.</span></li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check"
+                  style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Instant
+                  SMS door code sent to your phone.</span></li>
+              <li style="display: flex; align-items: flex-start; gap: 0.5rem;"><i data-lucide="check"
+                  style="color: var(--success-500); width: 14px; height: 14px; flex-shrink:0; margin-top: 2px;"></i><span>Strict
+                  zero-decibel quiet environment.</span></li>
             </ul>
           </div>
 
@@ -242,21 +304,40 @@
         <!-- Brand & Description & Social Icons -->
         <div class="footer__col footer__col--brand">
           <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
-              <path d="M16 10v16"/>
-              <path d="M10 4q6-3 12 0"/>
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+              <path d="M16 10v16" />
+              <path d="M10 4q6-3 12 0" />
             </svg>
             <span>StudyNest</span>
           </a>
           <p class="footer__desc">
-            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus,
+            academic excellence, and deep work.
           </p>
           <div class="footer__socials">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -292,8 +373,10 @@
         <!-- Newsletter Subscription -->
         <div class="footer__col">
           <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member
+            offers.</p>
+          <form class="footer__newsletter-form"
+            onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
             <div class="footer__input-group">
               <input type="email" placeholder="Enter your email" required class="footer__input">
               <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
@@ -306,7 +389,8 @@
 
       <!-- Copyright & Legal -->
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <span class="footer__divider">•</span>

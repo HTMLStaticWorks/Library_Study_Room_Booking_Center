@@ -5,11 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Explore Spaces | StudyNest</title>
-  <meta name="description" content="Explore all study spaces, real-time slot availability, room categories, and silence standards at StudyNest.">
+  <meta name="description"
+    content="Explore all study spaces, real-time slot availability, room categories, and silence standards at StudyNest.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -21,22 +23,27 @@
   <header class="nav" id="main-nav">
     <div class="nav__inner">
       <a class="nav__logo" href="index.html" aria-label="Home">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+          <path d="M16 10v16" />
+          <path d="M10 4q6-3 12 0" />
         </svg>
         <span>StudyNest</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
         <a href="home-2.html" data-nav="home-2" class="active">Home 2</a>
+        <a href="about.html" data-nav="about">About</a>
         <a href="services.html" data-nav="services">Rooms</a>
         <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about">About</a>
         <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
       <div class="nav__actions">
-        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+          title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i
+            data-lucide="moon"></i></button>
         <a href="login.html" class="nav__login-btn">Login</a>
         <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
@@ -45,11 +52,21 @@
     <div class="nav__mobile">
       <a href="index.html" data-nav="home">Home</a>
       <a href="home-2.html" data-nav="home-2" class="active">Home 2</a>
+      <a href="about.html" data-nav="about">About</a>
       <a href="services.html" data-nav="services">Rooms</a>
       <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about">About</a>
       <a href="contact.html" data-nav="contact">Contact</a>
       <a href="login.html" data-nav="login">Login</a>
+      <div class="nav__mobile-tools">
+        <button class="dark-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="rtl-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR">
+          <i data-lucide="globe"></i>
+          <span class="rtl-label">RTL Mode</span>
+        </button>
+      </div>
       <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
@@ -67,22 +84,39 @@
       <div class="container">
         <div class="explore-hero__inner">
           <div class="badge badge--hero">
-            <span style="width:8px;height:8px;border-radius:50%;background:var(--success-400)" class="animate-pulse"></span>
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--success-400)"
+              class="animate-pulse"></span>
             <span>Real-Time Study Slot Reservation Hub</span>
           </div>
           <h1 class="explore-hero__title">Precision Study Spaces for Unbroken Concentration.</h1>
-          <p class="explore-hero__sub">Eliminate cognitive friction. Check real-time seat availability across our sound-isolated pods and collaborative research rooms, reserve with a click, and access instantly via smartphone.</p>
+          <p class="explore-hero__sub">Eliminate cognitive friction. Check real-time seat availability across our
+            sound-isolated pods and collaborative research rooms, reserve with a click, and access instantly via
+            smartphone.</p>
           <div class="explore-hero__btns">
-            <a href="dashboard.html" class="btn btn--primary"><i data-lucide="calendar" style="width:18px;height:18px"></i><span>Book Your Study Room</span></a>
-            <a href="dashboard.html" class="btn btn--secondary btn--hero-sec"><span>Member Slot Portal</span><i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+            <a href="dashboard.html" class="btn btn--primary"><i data-lucide="calendar"
+                style="width:18px;height:18px"></i><span>Book Your Study Room</span></a>
+            <a href="dashboard.html" class="btn btn--secondary btn--hero-sec"><span>Member Slot Portal</span><i
+                data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
           </div>
 
           <!-- Metric Cards Nicely Positioned After Buttons -->
           <div class="explore-hero__metrics">
-            <div class="metric-card"><p class="metric-card__value">100%</p><p class="metric-card__label">Soundproof Tested</p></div>
-            <div class="metric-card"><p class="metric-card__value">06:00 – 24:00</p><p class="metric-card__label">Daily Open Hours</p></div>
-            <div class="metric-card"><p class="metric-card__value">&lt; 30 sec</p><p class="metric-card__label">Instant Digital Check-In</p></div>
-            <div class="metric-card"><p class="metric-card__value">1 Gbps</p><p class="metric-card__label">Dedicated Fiber Drops</p></div>
+            <div class="metric-card">
+              <p class="metric-card__value">100%</p>
+              <p class="metric-card__label">Soundproof Tested</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-card__value">06:00 – 24:00</p>
+              <p class="metric-card__label">Daily Open Hours</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-card__value">&lt; 30 sec</p>
+              <p class="metric-card__label">Instant Digital Check-In</p>
+            </div>
+            <div class="metric-card">
+              <p class="metric-card__value">1 Gbps</p>
+              <p class="metric-card__label">Dedicated Fiber Drops</p>
+            </div>
           </div>
         </div>
       </div>
@@ -95,7 +129,8 @@
           <div>
             <p class="section-eyebrow">Interactive Floor Grid</p>
             <h2 class="section-title">Live Study Space Status &amp; Floor Matrix</h2>
-            <p class="section-desc">View real-time occupation rates across Floor 3 (Silent Pods) and Floor 4 (Research Suites).</p>
+            <p class="section-desc">View real-time occupation rates across Floor 3 (Silent Pods) and Floor 4 (Research
+              Suites).</p>
           </div>
           <div class="room-matrix__actions">
             <span class="room-matrix__status"><span></span><span>Open for Booking</span></span>
@@ -112,26 +147,51 @@
         <div class="section-head">
           <p class="section-eyebrow">Space Taxonomy</p>
           <h2 class="section-title">Calibrated Zones for Every Cognitive Demand</h2>
-          <p class="section-desc">Whether you need absolute zero-decibel isolation or interactive peer debate space, we have an engineered zone for you.</p>
+          <p class="section-desc">Whether you need absolute zero-decibel isolation or interactive peer debate space, we
+            have an engineered zone for you.</p>
         </div>
         <div class="cats-grid">
           <div class="cat-card">
-            <div class="cat-card__icon"><i data-lucide="volume-2"></i></div>
-            <h3>Zero-Decibel Solo Pods</h3>
-            <p>Single-occupant pods featuring triple-glazed acoustic glass, motorized ventilation, and dimmable 3500K task lighting.</p>
-            <ul><li><i data-lucide="check-circle"></i><span>Noise Dampening: -38 dB reduction</span></li><li><i data-lucide="check-circle"></i><span>Integrated power &amp; wireless pad</span></li></ul>
+            <div class="cat-card__img-wrap">
+              <img src="assets/images/zone_zero_decibel_pod.jpg" alt="Zero-Decibel Solo Pods" loading="lazy">
+              <div class="cat-card__icon"><i data-lucide="volume-2"></i></div>
+            </div>
+            <div class="cat-card__content">
+              <h3>Zero-Decibel Solo Pods</h3>
+              <p>Single-occupant pods featuring triple-glazed acoustic glass, motorized ventilation, and dimmable 3500K task lighting.</p>
+              <ul>
+                <li><i data-lucide="check-circle"></i><span>Noise Dampening: -38 dB reduction</span></li>
+                <li><i data-lucide="check-circle"></i><span>Integrated power &amp; wireless pad</span></li>
+              </ul>
+            </div>
           </div>
           <div class="cat-card">
-            <div class="cat-card__icon"><i data-lucide="users"></i></div>
-            <h3>Collaborative Research Hubs</h3>
-            <p>Sound-dampened syndicate suites for 4 to 8 scholars. Features magnetic floor-to-ceiling glassboards and 4K wireless casting.</p>
-            <ul><li><i data-lucide="check-circle"></i><span>Ultra-HD screens for team slides</span></li><li><i data-lucide="check-circle"></i><span>Dry-erase marker kits provided</span></li></ul>
+            <div class="cat-card__img-wrap">
+              <img src="assets/images/zone_collaborative_research_hub.jpg" alt="Collaborative Research Hubs" loading="lazy">
+              <div class="cat-card__icon"><i data-lucide="users"></i></div>
+            </div>
+            <div class="cat-card__content">
+              <h3>Collaborative Research Hubs</h3>
+              <p>Sound-dampened syndicate suites for 4 to 8 scholars. Features magnetic floor-to-ceiling glassboards and 4K wireless casting.</p>
+              <ul>
+                <li><i data-lucide="check-circle"></i><span>Ultra-HD screens for team slides</span></li>
+                <li><i data-lucide="check-circle"></i><span>Dry-erase marker kits provided</span></li>
+              </ul>
+            </div>
           </div>
           <div class="cat-card">
-            <div class="cat-card__icon"><i data-lucide="layers"></i></div>
-            <h3>Grand Literature Hall</h3>
-            <p>Open atmospheric reading tables surrounded by curated reference texts, green brass lamps, and ergonomic seating.</p>
-            <ul><li><i data-lucide="check-circle"></i><span>Whisper zone etiquette enforced</span></li><li><i data-lucide="check-circle"></i><span>Direct librarian reference assistance</span></li></ul>
+            <div class="cat-card__img-wrap">
+              <img src="assets/images/zone_grand_literature_hall.jpg" alt="Grand Literature Hall" loading="lazy">
+              <div class="cat-card__icon"><i data-lucide="layers"></i></div>
+            </div>
+            <div class="cat-card__content">
+              <h3>Grand Literature Hall</h3>
+              <p>Open atmospheric reading tables surrounded by curated reference texts, green brass lamps, and ergonomic seating.</p>
+              <ul>
+                <li><i data-lucide="check-circle"></i><span>Whisper zone etiquette enforced</span></li>
+                <li><i data-lucide="check-circle"></i><span>Direct librarian reference assistance</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -144,15 +204,31 @@
           <div class="rules__text">
             <p class="section-eyebrow">Quiet Code</p>
             <h2 class="section-title">Our Non-Negotiable Silence Standard</h2>
-            <p class="section-desc">Every member signs our Academic Quiet Code. By respecting sensory boundaries, we protect the focused momentum of every learner.</p>
+            <p class="section-desc">Every member signs our Academic Quiet Code. By respecting sensory boundaries, we
+              protect the focused momentum of every learner.</p>
             <div>
-              <div class="rule-item"><i data-lucide="shield"></i><div><h4>Zero Phone Ringers Policy</h4><p>All devices must be set to silent or airplane mode before entering pod corridors.</p></div></div>
-              <div class="rule-item"><i data-lucide="shield"></i><div><h4>Headphone Leakage Control</h4><p>Audio volume should remain non-audible to adjacent desks at all times.</p></div></div>
+              <div class="rule-item"><i data-lucide="shield"></i>
+                <div>
+                  <h4>Zero Phone Ringers Policy</h4>
+                  <p>All devices must be set to silent or airplane mode before entering pod corridors.</p>
+                </div>
+              </div>
+              <div class="rule-item"><i data-lucide="shield"></i>
+                <div>
+                  <h4>Headphone Leakage Control</h4>
+                  <p>Audio volume should remain non-audible to adjacent desks at all times.</p>
+                </div>
+              </div>
             </div>
           </div>
           <div class="rules__image">
             <img src="assets/images/home2_quiet_floor.jpg" alt="Library Floor Quiet Atmosphere" loading="lazy">
-            <div class="rules__image-overlay"><div><h4>Monitored Decibel Levels: Avg 18.2 dBA</h4><p>Continuous acoustic sensor logging ensures full compliance.</p></div></div>
+            <div class="rules__image-overlay">
+              <div>
+                <h4>Monitored Decibel Levels: Avg 18.2 dBA</h4>
+                <p>Continuous acoustic sensor logging ensures full compliance.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -164,7 +240,8 @@
         <div class="section-head" style="max-width:720px">
           <p class="section-eyebrow">Academic Community</p>
           <h2 class="section-title">Join Over 1,200 High-Achieving Scholars</h2>
-          <p class="section-desc">From PhD dissertations to medical board exams and software engineering architecture, your best work begins in a quiet room.</p>
+          <p class="section-desc">From PhD dissertations to medical board exams and software engineering architecture,
+            your best work begins in a quiet room.</p>
         </div>
         <div class="cta-btns">
           <a href="dashboard.html" class="btn btn--primary">Reserve a Slot Now</a>
@@ -182,21 +259,40 @@
         <!-- Brand & Description & Social Icons -->
         <div class="footer__col footer__col--brand">
           <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
-              <path d="M16 10v16"/>
-              <path d="M10 4q6-3 12 0"/>
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+              <path d="M16 10v16" />
+              <path d="M10 4q6-3 12 0" />
             </svg>
             <span>StudyNest</span>
           </a>
           <p class="footer__desc">
-            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus,
+            academic excellence, and deep work.
           </p>
           <div class="footer__socials">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -232,8 +328,10 @@
         <!-- Newsletter Subscription -->
         <div class="footer__col">
           <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member
+            offers.</p>
+          <form class="footer__newsletter-form"
+            onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
             <div class="footer__input-group">
               <input type="email" placeholder="Enter your email" required class="footer__input">
               <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
@@ -246,7 +344,8 @@
 
       <!-- Copyright & Legal -->
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <span class="footer__divider">•</span>

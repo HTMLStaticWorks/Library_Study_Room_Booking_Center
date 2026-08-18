@@ -164,7 +164,13 @@
 
   function updateDarkIcon() {
     $$('.dark-toggle').forEach(function (btn) {
-      btn.innerHTML = darkMode ? '<i data-lucide="sun"></i>' : '<i data-lucide="moon"></i>';
+      var labelSpan = btn.querySelector('.theme-label');
+      if (labelSpan) {
+        btn.innerHTML = (darkMode ? '<i data-lucide="sun"></i>' : '<i data-lucide="moon"></i>') +
+          '<span class="theme-label">' + (darkMode ? 'Light Mode' : 'Dark Mode') + '</span>';
+      } else {
+        btn.innerHTML = darkMode ? '<i data-lucide="sun"></i>' : '<i data-lucide="moon"></i>';
+      }
       if (typeof lucide !== 'undefined') lucide.createIcons({ nodes: [btn] });
     });
   }
@@ -185,6 +191,10 @@
     $$('.rtl-toggle').forEach(function (btn) {
       btn.classList.toggle('active', isRtl);
       btn.setAttribute('title', isRtl ? 'Switch to LTR Mode' : 'Switch to RTL Mode');
+      var labelSpan = btn.querySelector('.rtl-label');
+      if (labelSpan) {
+        labelSpan.textContent = isRtl ? 'LTR Mode' : 'RTL Mode';
+      }
     });
   }
 

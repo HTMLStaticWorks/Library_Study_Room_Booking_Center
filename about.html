@@ -9,7 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -21,22 +22,27 @@
   <header class="nav" id="main-nav">
     <div class="nav__inner">
       <a class="nav__logo" href="index.html" aria-label="Home">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+          <path d="M16 10v16" />
+          <path d="M10 4q6-3 12 0" />
         </svg>
         <span>StudyNest</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
         <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="about.html" data-nav="about" class="active">About</a>
         <a href="services.html" data-nav="services">Rooms</a>
         <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about" class="active">About</a>
         <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
       <div class="nav__actions">
-        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+          title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i
+            data-lucide="moon"></i></button>
         <a href="login.html" class="nav__login-btn">Login</a>
         <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
@@ -45,11 +51,21 @@
     <div class="nav__mobile">
       <a href="index.html" data-nav="home">Home</a>
       <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="about.html" data-nav="about" class="active">About</a>
       <a href="services.html" data-nav="services">Rooms</a>
       <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about" class="active">About</a>
       <a href="contact.html" data-nav="contact">Contact</a>
       <a href="login.html" data-nav="login">Login</a>
+      <div class="nav__mobile-tools">
+        <button class="dark-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="rtl-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR">
+          <i data-lucide="globe"></i>
+          <span class="rtl-label">RTL Mode</span>
+        </button>
+      </div>
       <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
@@ -67,11 +83,13 @@
       <div class="container">
         <div class="page-hero__inner">
           <div class="badge">
-            <span style="width:8px;height:8px;border-radius:50%;background:var(--primary-500)" class="animate-pulse"></span>
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--primary-500)"
+              class="animate-pulse"></span>
             <span>Our Story &amp; Mission</span>
           </div>
           <h1 class="page-hero__title">Sanctuary Built for Uninterrupted Deep Work.</h1>
-          <p class="page-hero__sub">Founded to eliminate library noise and study friction. We combine advanced acoustic isolation engineering with real-time digital slot reservations for high-achieving scholars.</p>
+          <p class="page-hero__sub">Founded to eliminate library noise and study friction. We combine advanced acoustic
+            isolation engineering with real-time digital slot reservations for high-achieving scholars.</p>
         </div>
       </div>
     </section>
@@ -82,14 +100,17 @@
         <div class="section-head" style="text-align: center;">
           <p class="section-eyebrow">Academic Excellence</p>
           <h2 class="section-title">Built for Scholars Who Demand Total Focus</h2>
-          <p class="section-desc">StudyNest was founded to eliminate the noise, congestion, and lack of electrical outlets in traditional public libraries. We combine cutting-edge acoustic engineering with modern digital slot reservation systems.</p>
+          <p class="section-desc">StudyNest was founded to eliminate the noise, congestion, and lack of electrical
+            outlets in traditional public libraries. We combine cutting-edge acoustic engineering with modern digital
+            slot reservation systems.</p>
         </div>
 
         <div class="cats-grid" style="margin-top: 3rem;">
           <div class="cat-card">
             <div class="cat-card__icon"><i data-lucide="volume-x"></i></div>
             <h3>0 dB Acoustic Isolation</h3>
-            <p>Double-walled acoustic seals, active sound masking, and soundproof perimeter doors guarantee zero auditory distractions.</p>
+            <p>Double-walled acoustic seals, active sound masking, and soundproof perimeter doors guarantee zero
+              auditory distractions.</p>
             <ul>
               <li><i data-lucide="check-circle"></i><span>STC 52 Sound Transmission Rating</span></li>
               <li><i data-lucide="check-circle"></i><span>Continuous Decibel Floor Monitoring</span></li>
@@ -99,7 +120,8 @@
           <div class="cat-card">
             <div class="cat-card__icon"><i data-lucide="cpu"></i></div>
             <h3>Smart Keyless Infrastructure</h3>
-            <p>Integrated smartphone NFC and electronic keypad passcodes unlock your pod precisely at your scheduled session time.</p>
+            <p>Integrated smartphone NFC and electronic keypad passcodes unlock your pod precisely at your scheduled
+              session time.</p>
             <ul>
               <li><i data-lucide="check-circle"></i><span>Automated 4-Digit Unique PINs</span></li>
               <li><i data-lucide="check-circle"></i><span>Calendar Sync Access Verification</span></li>
@@ -109,7 +131,8 @@
           <div class="cat-card">
             <div class="cat-card__icon"><i data-lucide="zap"></i></div>
             <h3>Ergonomic Precision</h3>
-            <p>Herman Miller Aeron seating, motorized sit-stand desks, and flicker-free 5000K daylight lamps keep fatigue at bay.</p>
+            <p>Herman Miller Aeron seating, motorized sit-stand desks, and flicker-free 5000K daylight lamps keep
+              fatigue at bay.</p>
             <ul>
               <li><i data-lucide="check-circle"></i><span>Dual 4K Monitor Display Arms</span></li>
               <li><i data-lucide="check-circle"></i><span>Medical-Grade HEPA H14 Air Filtration</span></li>
@@ -120,42 +143,57 @@
     </section>
 
     <!-- SECTION 2: Acoustic Engineering Showcase -->
-    <section class="tech-showcase" style="padding: 5rem 0; background: var(--bg-card-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section class="tech-showcase"
+      style="padding: 5rem 0; background: var(--bg-card-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
       <div class="container">
         <div class="tech-showcase-grid">
           <div class="tech-showcase__content">
             <p class="section-eyebrow">Scientific Innovation</p>
             <h2 class="section-title" style="margin-bottom: 1rem;">Precision Engineering Meets Library Silence</h2>
-            <p class="section-desc" style="margin-bottom: 1.75rem;">Unlike conventional co-working spaces or coffee shops, every StudyNest pod undergoes rigorous acoustic wave analysis and decibel testing prior to deployment.</p>
-            
+            <p class="section-desc" style="margin-bottom: 1.75rem;">Unlike conventional co-working spaces or coffee
+              shops, every StudyNest pod undergoes rigorous acoustic wave analysis and decibel testing prior to
+              deployment.</p>
+
             <div class="tech-showcase__features">
-              <div class="card" style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
-                <div style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <div class="card"
+                style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
+                <div
+                  style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="shield-check" style="width: 22px; height: 22px;"></i>
                 </div>
                 <div>
-                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">Sub-5 Decibel Ambient Noise Floor</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Engineered acoustic baffling absorbs 99.4% of human speech wavelengths.</p>
+                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">Sub-5
+                    Decibel Ambient Noise Floor</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Engineered
+                    acoustic baffling absorbs 99.4% of human speech wavelengths.</p>
                 </div>
               </div>
 
-              <div class="card" style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
-                <div style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <div class="card"
+                style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
+                <div
+                  style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="wind" style="width: 22px; height: 22px;"></i>
                 </div>
                 <div>
-                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">Fresh O2 Air Turnover</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">12 complete air exchanges per hour prevent CO2 buildup and maintain cognitive alertness.</p>
+                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">Fresh O2
+                    Air Turnover</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">12 complete air
+                    exchanges per hour prevent CO2 buildup and maintain cognitive alertness.</p>
                 </div>
               </div>
 
-              <div class="card" style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
-                <div style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <div class="card"
+                style="padding: 1.25rem; display: flex; align-items: flex-start; gap: 1rem; border-left: 4px solid var(--primary-500);">
+                <div
+                  style="width: 44px; height: 44px; border-radius: var(--radius-xl); background: rgba(13,148,136,0.12); color: var(--primary-600); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
                   <i data-lucide="wifi" style="width: 22px; height: 22px;"></i>
                 </div>
                 <div>
-                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">10 Gbps Fiber Optic Desk Ports</h4>
-                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Dedicated gigabit ethernet jack and WiFi-6E network at every individual workstation.</p>
+                  <h4 style="font-weight: 700; font-size: 1rem; color: var(--text); margin-bottom: 0.25rem;">10 Gbps
+                    Fiber Optic Desk Ports</h4>
+                  <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.5; margin: 0;">Dedicated gigabit
+                    ethernet jack and WiFi-6E network at every individual workstation.</p>
                 </div>
               </div>
             </div>
@@ -174,67 +212,100 @@
         <div class="section-head" style="text-align: center;">
           <p class="section-eyebrow">Our Milestones</p>
           <h2 class="section-title">The Evolution of StudyNest</h2>
-          <p class="section-desc">From a small university experiment in Boston to a multi-city network of high-tech study sanctuaries.</p>
+          <p class="section-desc">From a small university experiment in Boston to a multi-city network of high-tech
+            study sanctuaries.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
           <div class="card" style="padding: 1.75rem; border-top: 4px solid var(--primary-500);">
-            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">2021 • FOUNDATION</div>
-            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">Boston Prototype Hub</h4>
-            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Launched 8 soundproof pods near university library quarter to solve exam sprint over-crowding.</p>
+            <div
+              style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+              2021 • FOUNDATION</div>
+            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">Boston
+              Prototype Hub</h4>
+            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Launched 8 soundproof pods near
+              university library quarter to solve exam sprint over-crowding.</p>
           </div>
 
           <div class="card" style="padding: 1.75rem; border-top: 4px solid var(--primary-500);">
-            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">2023 • EXPANSION</div>
-            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">IoT Keypad Entry Rollout</h4>
-            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Integrated automated passcode lock keypads and released instant online web booking engine.</p>
+            <div
+              style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+              2023 • EXPANSION</div>
+            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">IoT Keypad
+              Entry Rollout</h4>
+            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Integrated automated passcode lock
+              keypads and released instant online web booking engine.</p>
           </div>
 
           <div class="card" style="padding: 1.75rem; border-top: 4px solid var(--primary-500);">
-            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">2026 • ACADEMIC EQUITY</div>
-            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">University Grant Program</h4>
-            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Surpassed 120,000 focus hours and introduced subsidized grant access passes for doctoral researchers.</p>
+            <div
+              style="font-size: 0.8125rem; font-weight: 700; color: var(--primary-600); letter-spacing: 0.05em; margin-bottom: 0.5rem;">
+              2026 • ACADEMIC EQUITY</div>
+            <h4 style="font-weight: 700; font-size: 1.125rem; color: var(--text); margin-bottom: 0.5rem;">University
+              Grant Program</h4>
+            <p style="font-size: 0.875rem; color: var(--text-sec); line-height: 1.6;">Surpassed 120,000 focus hours and
+              introduced subsidized grant access passes for doctoral researchers.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SECTION 4: Leadership Team -->
-    <section class="team-section" style="padding: 4.5rem 0; background: var(--bg-card-alt); border-top: 1px solid var(--border);">
+    <section class="team-section"
+      style="padding: 4.5rem 0; background: var(--bg-card-alt); border-top: 1px solid var(--border);">
       <div class="container">
         <div class="section-head" style="text-align: center;">
           <p class="section-eyebrow">Academic Advisory &amp; Leadership</p>
           <h2 class="section-title">Meet the Minds Behind StudyNest</h2>
-          <p class="section-desc">A passionate team of acoustic engineers, academic librarians, and software architects.</p>
+          <p class="section-desc">A passionate team of acoustic engineers, academic librarians, and software architects.
+          </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
           <div class="card" style="padding: 1.5rem; text-align: center;">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Dr. Evelyn Vance" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
+              alt="Dr. Evelyn Vance"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
             <h4 style="font-weight: 700; font-size: 1rem; color: var(--text);">Dr. Evelyn Vance</h4>
-            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Co-Founder &amp; Chief Acoustic Officer</p>
-            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Former MIT Architectural Acoustics Fellow specializing in zero-decibel noise isolation.</p>
+            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">
+              Co-Founder &amp; Chief Acoustic Officer</p>
+            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Former MIT Architectural
+              Acoustics Fellow specializing in zero-decibel noise isolation.</p>
           </div>
 
           <div class="card" style="padding: 1.5rem; text-align: center;">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Marcus Sterling" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
+              alt="Marcus Sterling"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
             <h4 style="font-weight: 700; font-size: 1rem; color: var(--text);">Marcus Sterling</h4>
-            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Head of Member Experience</p>
-            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">12+ years directing research library operations and member concierge support systems.</p>
+            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Head of
+              Member Experience</p>
+            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">12+ years directing research
+              library operations and member concierge support systems.</p>
           </div>
 
           <div class="card" style="padding: 1.5rem; text-align: center;">
-            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Elena Rostova" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80"
+              alt="Elena Rostova"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
             <h4 style="font-weight: 700; font-size: 1rem; color: var(--text);">Elena Rostova</h4>
-            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Director of University Access</p>
-            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Oxford Rhodes Scholar managing institutional university partnerships and student grants.</p>
+            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">
+              Director of University Access</p>
+            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Oxford Rhodes Scholar managing
+              institutional university partnerships and student grants.</p>
           </div>
 
           <div class="card" style="padding: 1.5rem; text-align: center;">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="David K. Chen" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80"
+              alt="David K. Chen"
+              style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 2px solid var(--primary-500);">
             <h4 style="font-weight: 700; font-size: 1rem; color: var(--text);">David K. Chen</h4>
-            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Lead IoT Systems Engineer</p>
-            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Architect of keycard hardware, electronic keypad entry, and live slot sync algorithms.</p>
+            <p style="font-size: 0.8125rem; color: var(--primary-600); font-weight: 600; margin-bottom: 0.5rem;">Lead
+              IoT Systems Engineer</p>
+            <p style="font-size: 0.8125rem; color: var(--text-sec); line-height: 1.5;">Architect of keycard hardware,
+              electronic keypad entry, and live slot sync algorithms.</p>
           </div>
         </div>
       </div>
@@ -244,9 +315,16 @@
     <section class="community-cta">
       <div class="container">
         <div class="community-cta__inner" style="text-align: center; max-width: 780px; margin: 0 auto;">
-          <p class="section-eyebrow" style="color: #99f6e4; margin-bottom: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">Start Your Unbroken Study Session</p>
-          <h2 class="section-title" style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #ffffff; margin-bottom: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">Experience the Difference of Acoustic Isolation</h2>
-          <p class="section-desc" style="font-size: 1.0625rem; color: #e6fffa; margin-bottom: 2.25rem; line-height: 1.65; text-shadow: 0 1px 4px rgba(0,0,0,0.3);">Reserve your solo pod or executive studio online now. Instant keypad PIN generated upon booking confirmation.</p>
+          <p class="section-eyebrow"
+            style="color: #99f6e4; margin-bottom: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">
+            Start Your Unbroken Study Session</p>
+          <h2 class="section-title"
+            style="font-size: clamp(2rem, 4vw, 2.75rem); font-weight: 800; color: #ffffff; margin-bottom: 1rem; text-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+            Experience the Difference of Acoustic Isolation</h2>
+          <p class="section-desc"
+            style="font-size: 1.0625rem; color: #e6fffa; margin-bottom: 2.25rem; line-height: 1.65; text-shadow: 0 1px 4px rgba(0,0,0,0.3);">
+            Reserve your solo pod or executive studio online now. Instant keypad PIN generated upon booking
+            confirmation.</p>
           <div style="display: flex; gap: 1.25rem; justify-content: center; flex-wrap: wrap;">
             <a href="services.html" class="btn btn--lg btn--primary">Browse Study Spaces</a>
             <a href="membership.html" class="btn btn--lg btn--outline-white">View Member Plans</a>
@@ -264,21 +342,40 @@
         <!-- Brand & Description & Social Icons -->
         <div class="footer__col footer__col--brand">
           <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
-              <path d="M16 10v16"/>
-              <path d="M10 4q6-3 12 0"/>
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+              <path d="M16 10v16" />
+              <path d="M10 4q6-3 12 0" />
             </svg>
             <span>StudyNest</span>
           </a>
           <p class="footer__desc">
-            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus,
+            academic excellence, and deep work.
           </p>
           <div class="footer__socials">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -314,8 +411,10 @@
         <!-- Newsletter Subscription -->
         <div class="footer__col">
           <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member
+            offers.</p>
+          <form class="footer__newsletter-form"
+            onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
             <div class="footer__input-group">
               <input type="email" placeholder="Enter your email" required class="footer__input">
               <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
@@ -328,7 +427,8 @@
 
       <!-- Copyright & Legal -->
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <span class="footer__divider">•</span>

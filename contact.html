@@ -9,7 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/dark-mode.css">
   <link rel="stylesheet" href="assets/css/rtl.css">
@@ -21,22 +22,27 @@
   <header class="nav" id="main-nav">
     <div class="nav__inner">
       <a class="nav__logo" href="index.html" aria-label="Home">
-        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/><path d="M16 10v16"/><path d="M10 4q6-3 12 0"/>
+        <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+          <path d="M16 10v16" />
+          <path d="M10 4q6-3 12 0" />
         </svg>
         <span>StudyNest</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" data-nav="home">Home</a>
         <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="about.html" data-nav="about">About</a>
         <a href="services.html" data-nav="services">Rooms</a>
         <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about">About</a>
         <a href="contact.html" data-nav="contact" class="active">Contact</a>
       </nav>
       <div class="nav__actions">
-        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+          title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i
+            data-lucide="moon"></i></button>
         <a href="login.html" class="nav__login-btn">Login</a>
         <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
@@ -45,11 +51,21 @@
     <div class="nav__mobile">
       <a href="index.html" data-nav="home">Home</a>
       <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="about.html" data-nav="about">About</a>
       <a href="services.html" data-nav="services">Rooms</a>
       <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about">About</a>
       <a href="contact.html" data-nav="contact" class="active">Contact</a>
       <a href="login.html" data-nav="login">Login</a>
+      <div class="nav__mobile-tools">
+        <button class="dark-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="rtl-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR">
+          <i data-lucide="globe"></i>
+          <span class="rtl-label">RTL Mode</span>
+        </button>
+      </div>
       <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
@@ -67,11 +83,13 @@
       <div class="container">
         <div class="page-hero__inner">
           <div class="badge">
-            <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)" class="animate-pulse"></span>
+            <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)"
+              class="animate-pulse"></span>
             <span>24/7 Member Concierge Support</span>
           </div>
           <h1 class="page-hero__title">We Are Here to Assist Your Learning Journey.</h1>
-          <p class="page-hero__sub">Have questions about memberships, PIN passcode access, room bookings, or institutional university grants? Our concierge support team is at your service.</p>
+          <p class="page-hero__sub">Have questions about memberships, PIN passcode access, room bookings, or
+            institutional university grants? Our concierge support team is at your service.</p>
         </div>
       </div>
     </section>
@@ -83,22 +101,27 @@
         <p class="section-desc">Have questions about memberships, room bookings, or corporate packages?</p>
       </div>
 
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem;">
+      <div
+        style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; margin-bottom:3rem;">
         <div class="card" style="padding:1.5rem;">
           <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
-            <i data-lucide="map-pin"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Location</h4>
+            <i data-lucide="map-pin"></i>
+            <h4 style="font-weight:600; font-size:1rem; color:var(--text);">Location</h4>
           </div>
-          <p style="font-size:0.875rem; color:var(--text-sec);">12 Knowledge Avenue, Academic District<br>University Center</p>
+          <p style="font-size:0.875rem; color:var(--text-sec);">12 Knowledge Avenue, Academic District<br>University
+            Center</p>
         </div>
         <div class="card" style="padding:1.5rem;">
           <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
-            <i data-lucide="phone"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Phone</h4>
+            <i data-lucide="phone"></i>
+            <h4 style="font-weight:600; font-size:1rem; color:var(--text);">Phone</h4>
           </div>
           <p style="font-size:0.875rem; color:var(--text-sec);">+1 (800) 555-NEST<br>Mon–Sun: 6:00 AM – 12:00 AM</p>
         </div>
         <div class="card" style="padding:1.5rem;">
           <div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.5rem; color:var(--primary-600);">
-            <i data-lucide="mail"></i><h4 style="font-weight:600; font-size:1rem; color:var(--text);">Email</h4>
+            <i data-lucide="mail"></i>
+            <h4 style="font-weight:600; font-size:1rem; color:var(--text);">Email</h4>
           </div>
           <p style="font-size:0.875rem; color:var(--text-sec);">support@studynest.edu<br>admissions@studynest.edu</p>
         </div>
@@ -106,8 +129,10 @@
 
       <div class="card" style="padding:2rem; margin-bottom: 3.5rem;">
         <h3 style="font-size:1.125rem; font-weight:600; margin-bottom:1rem;">Send Us a Message</h3>
-        <form onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Message submitted successfully! Our support team will reply within 1 hour.', 'success'); } else { alert('Message submitted successfully!'); } this.reset();">
-          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
+        <form
+          onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Message submitted successfully! Our support team will reply within 1 hour.', 'success'); } else { alert('Message submitted successfully!'); } this.reset();">
+          <div
+            style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin-bottom:1rem;">
             <div>
               <label class="form-label">Your Name</label>
               <input type="text" class="form-input" placeholder="Alexander Wright" required>
@@ -119,7 +144,8 @@
           </div>
           <div style="margin-bottom:1.5rem;">
             <label class="form-label">Message</label>
-            <textarea class="form-input" style="height:120px; padding:0.75rem; resize:vertical;" placeholder="How can we assist your study needs?" required></textarea>
+            <textarea class="form-input" style="height:120px; padding:0.75rem; resize:vertical;"
+              placeholder="How can we assist your study needs?" required></textarea>
           </div>
           <button type="submit" class="btn btn--primary"><i data-lucide="send"></i><span>Send Message</span></button>
         </form>
@@ -130,44 +156,48 @@
         <div class="section-head" style="margin-bottom: 1.5rem;">
           <p class="section-eyebrow">Interactive Campus Location</p>
           <h2 class="section-title">Find StudyNest Main Center</h2>
-          <p class="section-desc">Conveniently situated in the heart of the university academic corridor with 24/7 keycard turnstiles.</p>
+          <p class="section-desc">Conveniently situated in the heart of the university academic corridor with 24/7
+            keycard turnstiles.</p>
         </div>
 
         <div class="card" style="padding: 1.25rem; overflow: hidden;">
-          <div style="width: 100%; height: 360px; border-radius: var(--radius-xl); overflow: hidden; position: relative;">
-            <iframe 
-              title="StudyNest Campus Location Map"
-              src="https://maps.google.com/maps?q=Boston+University+Library&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy">
+          <div
+            style="width: 100%; height: 360px; border-radius: var(--radius-xl); overflow: hidden; position: relative;">
+            <iframe title="StudyNest Campus Location Map"
+              src="https://maps.google.com/maps?q=Boston+University+Library&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+          <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
             <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-              <i data-lucide="bus" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <i data-lucide="bus"
+                style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
               <div>
                 <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">Public Transit</h5>
-                <p style="font-size: 0.8125rem; color: var(--text-sec);">MBTA Green Line (B) Comm. Ave stop — 2 minute walk.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">MBTA Green Line (B) Comm. Ave stop — 2 minute
+                  walk.</p>
               </div>
             </div>
 
             <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-              <i data-lucide="car" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <i data-lucide="car"
+                style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
               <div>
                 <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">Underground Parking</h5>
-                <p style="font-size: 0.8125rem; color: var(--text-sec);">Validated 2-hour parking at Academic Center Garage.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">Validated 2-hour parking at Academic Center
+                  Garage.</p>
               </div>
             </div>
 
             <div style="display: flex; align-items: flex-start; gap: 0.75rem;">
-              <i data-lucide="key" style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
+              <i data-lucide="key"
+                style="color: var(--primary-600); width: 20px; height: 20px; flex-shrink: 0; margin-top: 2px;"></i>
               <div>
                 <h5 style="font-weight: 700; font-size: 0.875rem; color: var(--text);">24/7 Keycard Entry</h5>
-                <p style="font-size: 0.8125rem; color: var(--text-sec);">Smartphone NFC turnstiles open round the clock.</p>
+                <p style="font-size: 0.8125rem; color: var(--text-sec);">Smartphone NFC turnstiles open round the clock.
+                </p>
               </div>
             </div>
           </div>
@@ -176,36 +206,54 @@
 
       <!-- NEW SECTION 2: 24/7 Live Keypad PIN Access & Emergency Support Desk -->
       <section class="pin-support-section" id="concierge-assistance-section" style="margin-bottom: 2rem;">
-        <div class="card" style="padding: 2.25rem; background: linear-gradient(135deg, var(--bg-card), var(--bg-card-alt)); border: 1px solid var(--primary-400);">
-          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+        <div class="card"
+          style="padding: 2.25rem; background: linear-gradient(135deg, var(--bg-card), var(--bg-card-alt)); border: 1px solid var(--primary-400);">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
             <div>
-              <div class="badge" style="background: rgba(13,148,136,0.12); color: var(--primary-700); border-color: var(--primary-300); margin-bottom: 0.5rem;">
-                <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)" class="animate-pulse"></span>
+              <div class="badge"
+                style="background: rgba(13,148,136,0.12); color: var(--primary-700); border-color: var(--primary-300); margin-bottom: 0.5rem;">
+                <span style="width:8px;height:8px;border-radius:50%;background:var(--success-500)"
+                  class="animate-pulse"></span>
                 <span>Live Concierge Desk</span>
               </div>
-              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Need Immediate Keypad Access or PIN Recovery?</h3>
-              <p style="font-size: 0.875rem; color: var(--text-sec);">Locked out of your pod or lost your 4-digit passcode? Our duty floor marshal responds in under 2 minutes.</p>
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text);">Need Immediate Keypad Access or PIN
+                Recovery?</h3>
+              <p style="font-size: 0.875rem; color: var(--text-sec);">Locked out of your pod or lost your 4-digit
+                passcode? Our duty floor marshal responds in under 2 minutes.</p>
             </div>
 
             <div>
-              <a href="tel:+18005557883" class="btn btn--primary" style="gap: 0.5rem;"><i data-lucide="phone-call"></i><span>Call Emergency Line</span></a>
+              <a href="tel:+18005557883" class="btn btn--primary" style="gap: 0.5rem;"><i
+                  data-lucide="phone-call"></i><span>Call Emergency Line</span></a>
             </div>
           </div>
 
           <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
-            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
-              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">Instant SMS PIN Resend</div>
-              <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">Text 'PIN' to +1 (800) 555-NEST</div>
+            <div
+              style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div
+                style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">
+                Instant SMS PIN Resend</div>
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">Text 'PIN' to +1 (800) 555-NEST
+              </div>
             </div>
 
-            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
-              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">On-Duty Floor Marshal</div>
+            <div
+              style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div
+                style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">
+                On-Duty Floor Marshal</div>
               <div style="font-size: 0.875rem; font-weight: 600; color: var(--text);">Ground Floor Concierge Desk</div>
             </div>
 
-            <div style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
-              <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">Average Response Time</div>
-              <div style="font-size: 0.875rem; font-weight: 600; color: var(--success-600);">&lt; 90 Seconds Guaranteed</div>
+            <div
+              style="background: var(--bg-surface); padding: 1rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light);">
+              <div
+                style="font-size: 0.75rem; font-weight: 700; color: var(--primary-600); text-transform: uppercase; margin-bottom: 0.25rem;">
+                Average Response Time</div>
+              <div style="font-size: 0.875rem; font-weight: 600; color: var(--success-600);">&lt; 90 Seconds Guaranteed
+              </div>
             </div>
           </div>
         </div>
@@ -221,21 +269,40 @@
         <!-- Brand & Description & Social Icons -->
         <div class="footer__col footer__col--brand">
           <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
-              <path d="M16 10v16"/>
-              <path d="M10 4q6-3 12 0"/>
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+              <path d="M16 10v16" />
+              <path d="M10 4q6-3 12 0" />
             </svg>
             <span>StudyNest</span>
           </a>
           <p class="footer__desc">
-            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus,
+            academic excellence, and deep work.
           </p>
           <div class="footer__socials">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -271,8 +338,10 @@
         <!-- Newsletter Subscription -->
         <div class="footer__col">
           <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member
+            offers.</p>
+          <form class="footer__newsletter-form"
+            onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
             <div class="footer__input-group">
               <input type="email" placeholder="Enter your email" required class="footer__input">
               <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
@@ -285,7 +354,8 @@
 
       <!-- Copyright & Legal -->
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <span class="footer__divider">•</span>

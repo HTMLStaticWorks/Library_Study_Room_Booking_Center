@@ -35,15 +35,17 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="index.html" data-nav="home" class="active">Home</a>
         <a href="home-2.html" data-nav="home-2">Home 2</a>
+        <a href="about.html" data-nav="about">About</a>
         <a href="services.html" data-nav="services">Rooms</a>
         <a href="membership.html" data-nav="membership">Membership</a>
-        <a href="about.html" data-nav="about">About</a>
         <a href="contact.html" data-nav="contact">Contact</a>
       </nav>
 
       <div class="nav__actions">
-        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR"><span>RTL</span></button>
-        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i data-lucide="moon"></i></button>
+        <button class="rtl-toggle" type="button" aria-label="Toggle RTL mode"
+          title="Toggle RTL / LTR"><span>RTL</span></button>
+        <button class="dark-toggle" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode"><i
+            data-lucide="moon"></i></button>
         <a href="login.html" class="nav__login-btn">Login</a>
         <a href="dashboard.html" class="nav__cta">Dashboard</a>
         <button class="nav__toggle" type="button" aria-label="Toggle navigation"><i data-lucide="menu"></i></button>
@@ -53,11 +55,21 @@
     <div class="nav__mobile">
       <a href="index.html" data-nav="home" class="active">Home</a>
       <a href="home-2.html" data-nav="home-2">Home 2</a>
+      <a href="about.html" data-nav="about">About</a>
       <a href="services.html" data-nav="services">Rooms</a>
       <a href="membership.html" data-nav="membership">Membership</a>
-      <a href="about.html" data-nav="about">About</a>
       <a href="contact.html" data-nav="contact">Contact</a>
       <a href="login.html" data-nav="login">Login</a>
+      <div class="nav__mobile-tools">
+        <button class="dark-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle dark mode" title="Toggle Dark Mode">
+          <i data-lucide="moon"></i>
+          <span class="theme-label">Dark Mode</span>
+        </button>
+        <button class="rtl-toggle nav__mobile-tool-btn" type="button" aria-label="Toggle RTL mode" title="Toggle RTL / LTR">
+          <i data-lucide="globe"></i>
+          <span class="rtl-label">RTL Mode</span>
+        </button>
+      </div>
       <a href="dashboard.html" class="nav__mobile-cta">Dashboard</a>
     </div>
   </header>
@@ -190,7 +202,8 @@
         <div class="section-head" style="text-align:center">
           <p class="section-eyebrow">Precision Engineering</p>
           <h2 class="section-title">Acoustic Decibel &amp; Environmental Calibration</h2>
-          <p class="section-desc">Experience zero-distraction focus powered by active sound damping, medical-grade HEPA air filtration, and ergonomic posture support.</p>
+          <p class="section-desc">Experience zero-distraction focus powered by active sound damping, medical-grade HEPA
+            air filtration, and ergonomic posture support.</p>
         </div>
 
         <div class="acoustic-grid">
@@ -206,7 +219,9 @@
                   <span class="db-name"><i data-lucide="coffee"></i> Public Coffee Shop</span>
                   <span class="db-val db-val--high">72 dB</span>
                 </div>
-                <div class="db-bar-bg"><div class="db-bar-fill" style="width: 85%; background: #ef4444;"></div></div>
+                <div class="db-bar-bg">
+                  <div class="db-bar-fill" style="width: 85%; background: #ef4444;"></div>
+                </div>
                 <span class="db-subtext">Frequent chatter, espresso grinders &amp; high auditory stress</span>
               </div>
               <div class="db-item">
@@ -214,7 +229,9 @@
                   <span class="db-name"><i data-lucide="book-open"></i> Standard City Library</span>
                   <span class="db-val db-val--med">48 dB</span>
                 </div>
-                <div class="db-bar-bg"><div class="db-bar-fill" style="width: 55%; background: #f59e0b;"></div></div>
+                <div class="db-bar-bg">
+                  <div class="db-bar-fill" style="width: 55%; background: #f59e0b;"></div>
+                </div>
                 <span class="db-subtext">Footsteps, keyboard clatter &amp; open room echo</span>
               </div>
               <div class="db-item db-item--highlight">
@@ -222,14 +239,25 @@
                   <span class="db-name"><i data-lucide="shield-check"></i> StudyNest Acoustic Pod</span>
                   <span class="db-val db-val--opt">0 - 5 dB</span>
                 </div>
-                <div class="db-bar-bg"><div class="db-bar-fill" style="width: 8%; background: var(--primary-600);"></div></div>
+                <div class="db-bar-bg">
+                  <div class="db-bar-fill" style="width: 8%; background: var(--primary-600);"></div>
+                </div>
                 <span class="db-subtext">Absolute sound isolation &amp; unbroken deep work focus</span>
               </div>
             </div>
             <div class="db-meter-footer">
-              <div class="db-stat"><span class="db-stat-num">99.4%</span><span class="db-stat-lbl">Noise Elimination</span></div>
-              <div class="db-stat"><span class="db-stat-num">&lt; 450ppm</span><span class="db-stat-lbl">CO2 Freshness</span></div>
-              <div class="db-stat"><span class="db-stat-num">500 Lux</span><span class="db-stat-lbl">Circadian Glow</span></div>
+              <div class="db-stat">
+                <span class="db-stat-num">99.4%</span>
+                <span class="db-stat-lbl">Noise Elimination</span>
+              </div>
+              <div class="db-stat">
+                <span class="db-stat-num">&lt;&nbsp;450ppm</span>
+                <span class="db-stat-lbl">CO2 Freshness</span>
+              </div>
+              <div class="db-stat">
+                <span class="db-stat-num">500&nbsp;Lux</span>
+                <span class="db-stat-lbl">Circadian Glow</span>
+              </div>
             </div>
           </div>
 
@@ -239,7 +267,8 @@
               <div class="acoustic-feat-icon"><i data-lucide="volume-x"></i></div>
               <div class="acoustic-feat-body">
                 <h3>Multi-Layer Sound Isolation Vault</h3>
-                <p>Heavy acoustic rockwool insulation with magnetic double-gasket door seals keeps outside noise completely imperceptible.</p>
+                <p>Heavy acoustic rockwool insulation with magnetic double-gasket door seals keeps outside noise
+                  completely imperceptible.</p>
               </div>
             </div>
 
@@ -247,7 +276,8 @@
               <div class="acoustic-feat-icon"><i data-lucide="wind"></i></div>
               <div class="acoustic-feat-body">
                 <h3>HEPA-14 Clean Air &amp; CO2 Scrubbing</h3>
-                <p>Continuous silent air exchange refreshes room oxygen every 3 minutes, preventing brain fatigue and mid-afternoon drowsiness.</p>
+                <p>Continuous silent air exchange refreshes room oxygen every 3 minutes, preventing brain fatigue and
+                  mid-afternoon drowsiness.</p>
               </div>
             </div>
 
@@ -255,7 +285,8 @@
               <div class="acoustic-feat-icon"><i data-lucide="sun"></i></div>
               <div class="acoustic-feat-body">
                 <h3>Circadian Focus &amp; Dimmable Lighting</h3>
-                <p>Customizable 2700K to 6500K spectrum LED panels let you switch between high-alert research mode and relaxing reading ambiance.</p>
+                <p>Customizable 2700K to 6500K spectrum LED panels let you switch between high-alert research mode and
+                  relaxing reading ambiance.</p>
               </div>
             </div>
           </div>
@@ -269,7 +300,8 @@
         <div class="section-head" style="text-align:center">
           <p class="section-eyebrow">Seamless Technology</p>
           <h2 class="section-title">Smart Keyless Access &amp; Member Concierge</h2>
-          <p class="section-desc">Zero front-desk queues. Check instant floor map availability, unlock your assigned pod with a digital PIN code, and enjoy premium complimentary perks.</p>
+          <p class="section-desc">Zero front-desk queues. Check instant floor map availability, unlock your assigned pod
+            with a digital PIN code, and enjoy premium complimentary perks.</p>
         </div>
 
         <div class="ecosystem-grid">
@@ -280,7 +312,8 @@
               <i data-lucide="lock"></i>
             </div>
             <h3>Electronic PIN Door Locks</h3>
-            <p>Receive your unique 6-digit door code instantly on your member dashboard. Walk straight to your pod and unlock keylessly at your reserved time.</p>
+            <p>Receive your unique 6-digit door code instantly on your member dashboard. Walk straight to your pod and
+              unlock keylessly at your reserved time.</p>
             <ul class="eco-list">
               <li><i data-lucide="check"></i> 0-second front desk waiting time</li>
               <li><i data-lucide="check"></i> Mobile NFC tap &amp; code backup</li>
@@ -295,7 +328,8 @@
               <i data-lucide="radar"></i>
             </div>
             <h3>Real-Time Floor Plan &amp; Sensors</h3>
-            <p>Our millimeter-wave radar sensors track live room occupancy so you can check exact seat availability across all floors before arriving.</p>
+            <p>Our millimeter-wave radar sensors track live room occupancy so you can check exact seat availability
+              across all floors before arriving.</p>
             <ul class="eco-list">
               <li><i data-lucide="check"></i> 100% accurate live floor map</li>
               <li><i data-lucide="check"></i> Instant slot extensions via dashboard</li>
@@ -310,7 +344,8 @@
               <i data-lucide="sparkles"></i>
             </div>
             <h3>Barista Coffee &amp; Laser Print Hub</h3>
-            <p>Every room pass includes unlimited pour-over espresso, cold brew, organic herbal teas, and high-speed wireless document printing.</p>
+            <p>Every room pass includes unlimited pour-over espresso, cold brew, organic herbal teas, and high-speed
+              wireless document printing.</p>
             <ul class="eco-list">
               <li><i data-lucide="check"></i> Free artisanal espresso &amp; tea bar</li>
               <li><i data-lucide="check"></i> High-speed 1200 DPI wireless laser print</li>
@@ -460,21 +495,40 @@
         <!-- Brand & Description & Social Icons -->
         <div class="footer__col footer__col--brand">
           <a class="footer__logo" href="index.html" aria-label="StudyNest Home">
-            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16"/>
-              <path d="M16 10v16"/>
-              <path d="M10 4q6-3 12 0"/>
+            <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 26V10a2 2 0 0 1 2-2h6l2 2 2-2h6a2 2 0 0 1 2 2v16" />
+              <path d="M16 10v16" />
+              <path d="M10 4q6-3 12 0" />
             </svg>
             <span>StudyNest</span>
           </a>
           <p class="footer__desc">
-            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus, academic excellence, and deep work.
+            Premium private library &amp; acoustic study pod booking center. Purpose-built for uninterrupted focus,
+            academic excellence, and deep work.
           </p>
           <div class="footer__socials">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -510,8 +564,10 @@
         <!-- Newsletter Subscription -->
         <div class="footer__col">
           <h4 class="footer__title">Newsletter</h4>
-          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member offers.</p>
-          <form class="footer__newsletter-form" onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
+          <p class="footer__newsletter-desc">Subscribe to receive study tips, seat availability alerts, and member
+            offers.</p>
+          <form class="footer__newsletter-form"
+            onsubmit="event.preventDefault(); if(window.StudyNest && window.StudyNest.showToast) { window.StudyNest.showToast('Subscribed successfully!', 'success'); } else { alert('Subscribed successfully!'); } this.reset();">
             <div class="footer__input-group">
               <input type="email" placeholder="Enter your email" required class="footer__input">
               <button type="submit" class="btn btn--primary footer__btn" aria-label="Subscribe">
@@ -524,7 +580,8 @@
 
       <!-- Copyright & Legal -->
       <div class="footer__bottom">
-        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking Center.</p>
+        <p class="footer__copy">&copy; 2026 StudyNest. All rights reserved. Private Library &amp; Study Room Booking
+          Center.</p>
         <div class="footer__legal">
           <a href="#">Privacy Policy</a>
           <span class="footer__divider">•</span>
