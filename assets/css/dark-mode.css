@@ -565,6 +565,13 @@ body.dark-mode input[type="date"]::-webkit-calendar-picker-indicator:hover {
   color: var(--primary-400);
 }
 
+.dark-mode .cat-card > .cat-card__icon {
+  background: var(--n950);
+  border-color: var(--primary-500);
+  color: var(--primary-400);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .dark-mode .cat-card h3 {
   color: #ffffff;
 }

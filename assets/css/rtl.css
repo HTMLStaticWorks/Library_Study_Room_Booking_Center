@@ -168,6 +168,16 @@ html[dir="rtl"] .cat-card li svg {
   margin-left: 0.5rem;
 }
 
+html[dir="rtl"] .cat-card > .cat-card__icon {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .cat-card__img-wrap .cat-card__icon {
+  right: auto;
+  left: 0.875rem;
+}
+
 /* ─── Quick Search Ribbon Bar RTL ─── */
 html[dir="rtl"] .quick-search__form {
   direction: rtl;
